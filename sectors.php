@@ -284,76 +284,56 @@
     <h2>Services</h2>
   </div>
 
+
   <div class="services-column">
-    <h3>Corporate Services</h3>
+    <h3>Audit and Assurance</h3>
     <ul>
-      <li>Corporate Secretarial and Administration</li>
-      <li>Security Trustee</li>
-      <li>Escrow Agent</li>
-      <li>Distress and Recovery</li>
+      <li><a href="#">Audit services for clarity, insight and direction</a></li>
+      <li><a href="#">External Audit</a></li>
+      <li><a href="#">Assurance Reviews</a></li>
+      <li><a href="#">Joint Financial Audits</a></li>
+      <li><a href="#">Audit Preparation Support </a></li>
     </ul>
 
-    <h3>Outsourcing Services</h3>
+    <h3>Tax Services</h3>
     <ul>
-      <li>Accounting</li>
-      <li>Payroll</li>
-      <li>Tax Compliance</li>
-      <li>Immigration</li>
-      <li>Managed IT Services</li>
+      <li><a href="#">Relieving pressure through expert tax guidance</a></li>
+      <li><a href="#">Tax Compliance</a></li>
+      <li><a href="#">Indirect Taxes</a></li>
+      <li><a href="#">Tax Advisory Services</a></li>
     </ul>
   </div>
 
   <div class="services-column">
-    <h3>Risk Advisory</h3>
-    <ul>
-      <li>Forensics Advisory & Compliance</li>
-      <li>AML/CFT</li>
-      <li>Internal Audit and IT reviews</li>
-      <li>Safeguarding</li>
-      <li>Corporate Intelligence and Due Diligence</li>
-      <li>Reputation Management and Crisis PR</li>
-      <li>Corporate Security</li>
-      <li>Whistleblowing</li>
-      <li>Financial Assurance and Grant Management</li>
-    </ul>
-  </div>
 
-  <div class="services-column">
-    <h3>Adili Cyber</h3>
+    <h3>Business Support And Solutions</h3>
     <ul>
-      <li>Comprehensive Cybersecurity Solutions</li>
-      <li>Advanced Data Engineering & Analytics</li>
-      <li>Microsoft Services Integration</li>
-      <li>Adili Cyber Training Arena</li>
+      <li><a href="#">Outsourced Accounting</a></li>
+      <li><a href="#">Payroll & Pensions Services</a></li>
     </ul>
 
-    <h3>Strategic Management Solutions</h3>
+    <h3>Business Advisory</h3>
     <ul>
-      <li>ESG Solutions</li>
-      <li>HR Advisory</li>
-      <li>Strategy Advisory</li>
-    </ul>
-
-    <h3>Private Clients</h3>
-    <ul>
-      <li>Fiduciary Services</li>
-      <li>Executor Services</li>
+      <li><a href="#">Advice you can trust, a plan you can follow</a></li>
+      <li><a href="#">Corporate Finance</a></li>
+      <li><a href="#">Forensic Services</a></li>
+      <li><a href="#">Transaction Services</a></li>
     </ul>
   </div>
 
   <div class="services-column side-info">
-    <h3>About Adili Group</h3>
+    <h3>About Bellwick Africa</h3>
     <ul>
-      <li>Insights</li>
-      <li>Contact</li>
-      <li>Careers</li>
+      <li><a href="contacts.php">Contact</a></li>
+      <li><a href="sectors.php">Sectors</a></li>
     </ul>
 
     <h3>Partners</h3>
-    <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
-    <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo">
+    <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
+    <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
   </div>
 </div>
+
 
 
 <footer class="bottom-footer">
