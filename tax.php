@@ -209,21 +209,6 @@
   </div>
 
   <div class="services-column">
-    <h3>Risk Advisory</h3>
-    <ul>
-      <li>Forensics Advisory & Compliance</li>
-      <li>AML/CFT</li>
-      <li>Internal Audit and IT reviews</li>
-      <li>Safeguarding</li>
-      <li>Corporate Intelligence and Due Diligence</li>
-      <li>Reputation Management and Crisis PR</li>
-      <li>Corporate Security</li>
-      <li>Whistleblowing</li>
-      <li>Financial Assurance and Grant Management</li>
-    </ul>
-  </div>
-
-  <div class="services-column">
     <h3>Audit and Assurance</h3>
     <ul>
       <li><a href="#">Audit services for clarity, insight and direction</a></li>

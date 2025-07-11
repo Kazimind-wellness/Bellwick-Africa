@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Us</title>
+  <title>Sectors</title>
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="sectors.css">
   <link rel="stylesheet" href="styles.css">
