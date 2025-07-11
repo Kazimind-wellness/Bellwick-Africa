@@ -1,0 +1,99 @@
+.capabilities-section {
+    width: 100%;
+    margin: 3rem 0;
+    padding: 0 1.5rem;
+    font-family: 'Georgia', serif;
+    color: #222;
+}
+
+.capabilities-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c23b22;
+    /* Deep orange/red tone */
+    margin-bottom: 1rem;
+}
+
+.capabilities-section p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    font-size: 2rem;
+    color: #222;
+}
+
+
+/* The Changing content in INDEX.PHP */
+.container {
+    display: flex;
+    margin: 4rem auto;
+    width: 100%;
+    height: 50vh;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #004766;
+    color: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .tab {
+    background: none;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.sidebar .tab:hover,
+.sidebar .tab.active {
+    background-color: #00688b;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.content img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    color: #b23b0f;
+}
+
+.text-content p {
+    font-size: 26px;
+    color: #444;
+}
+
+.action-button {
+    margin-top: 15px;
+    background-color: #004766;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #00688b;
+}
