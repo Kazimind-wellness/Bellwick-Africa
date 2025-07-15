@@ -8,7 +8,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 // Load .env variables
 $dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+$dotenv->safeLoad();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form values safely
