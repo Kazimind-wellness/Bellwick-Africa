@@ -12,13 +12,13 @@
 
   <!-- Floating Navigation -->
   <header class="floating-nav">
-      <div class="left-side">
+      <!-- <div class="left-side">
           <a href="#" class="logo">LOGO</a>
-      </div>
-
+      </div> -->
+      <a href="contacts.php" class="enquire-btn" >ENQUIRE</a>
       <nav class="main-nav">
           <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li class="dropdown"><a href="aboutUs.php">About Us</a></li>
 
                 <li class="dropdown" style="height: 10px;">
@@ -38,30 +38,14 @@
               
           </ul>
       </nav>
-       <a href="contacts.php" class="enquire-btn" >ENQUIRE</a>
+ 
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
   </header>
 
   <section>
-    <!-- Side Navigation Buttons -->
-    <!-- <div class="dots-container">
-        <div class="nav-dots">
-            <span class="dot active" data-section="0"></span>
-            <span class="dot" data-section="1"></span>
-            <span class="dot" data-section="2"></span>
-        </div>
-    </div> -->
-    
-    <div class="side-nav right-nav">
-        <div class="nav-social">
-            <a href="#">FB</a>
-            <a href="#">TW</a>
-            <a href="#">IG</a>
-        </div>
-    </div>
-
+ 
     <!-- Main Sections -->
     <section class="fullpage-section active" data-section="0">
         <div class="header">
@@ -73,6 +57,18 @@
                 </div>
             </div>
         </div>
+      <div class="side-nav right-nav">
+        <div class="nav-social">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+      </div>
+      </div>
+
+    <div class="arrow-buttons">
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn">&#10095;</button>
+    </div>
     </section>
 
     <section class="fullpage-section" data-section="1">
@@ -85,6 +81,17 @@
                 </div>
             </div>
         </div>
+      <div class="side-nav right-nav">
+          <div class="nav-social">
+              <a href="#">FB</a>
+              <a href="#">TW</a>
+              <a href="#">IG</a>
+          </div>
+      </div>
+      <div class="arrow-buttons">
+        <button id="prevBtn">&#10094;</button>
+        <button id="nextBtn">&#10095;</button>
+      </div>
     </section>
 
     <section class="fullpage-section" data-section="2">
@@ -97,7 +104,34 @@
                 </div>
             </div>
         </div>
+      <div class="side-nav right-nav">
+        <div class="nav-social">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+      </div>
+    </div>
+
+    <div class="arrow-buttons">
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn">&#10095;</button>
+    </div>
+
     </section>
+
+
+
+
+    <!-- Side Navigation Buttons -->
+    <div class="dots-container">
+        <div class="nav-dots">
+            <span class="dot active" data-section="0"></span>
+            <span class="dot" data-section="1"></span>
+            <span class="dot" data-section="2"></span>
+        </div>
+    </div>
+
+</section>
 
         <section class="capabilities-section">
         <h2>Our <span class="highlight">Capabilities</span></h2>
@@ -117,7 +151,7 @@
     </div>
 
   <div class="content">
-      <img id="content-image" src="https://via.placeholder.com/400x250" alt="Image" />
+      <img id="content-image" src="bellwick.jpg" alt="Image" />
       <div class="text-content">
         <h2 id="content-title">Bellwick Africa at a Glance</h2>
         <p id="content-description">
@@ -133,6 +167,36 @@
     </div>
   </div>
 
+    <section class="mobile">
+      <section class="capabilities-section">
+            <h2>Bellwick Africa at a Glance</span></h2>
+            <p>
+              Bellwick Africa LLP (“Bellwick”) is a leading consultancy firm based in Nairobi, providing accounting, 
+              audit, tax, and business advisory services to businesses and individuals. Established in 2020, we 
+              combine professional expertise, technology, and a deep understanding of our clients' needs to deliver 
+              high-quality, effective, and responsive solutions.
+                    
+            </p>
+              <section class="capabilities-section">
+            <h2>Our Beleive</span></h2>
+            <p>
+            We believe that success comes from collaboration. Our team of reliable, approachable, and proactive professionals is committed to more than just meeting your needs—we work alongside you to help you achieve your goals. Running a business can be challenging but having a trusted advisor to provide guidance and act as a sounding board makes all the difference.
+            </p>
+              <section class="capabilities-section">
+            <h2>Our Advisors</span></h2>
+            <p>
+            Our business improvement advisors offer practical and strategic insights to drive growth, enhance efficiency, and support long-term success.
+            </p>
+            </section>
+              <section class="capabilities-section">
+              <h2>Welcome</span></h2>
+                <p>
+              We welcome the opportunity to connect and build a lasting professional relationship based on a deep understanding of your business.
+                </p>
+              </section>
+        </section>
+      </section>
+  </section>
 
     <section class="capabilities-section">
         <h2>Our <span class="highlight">Team</span></h2>
@@ -147,7 +211,14 @@
   <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
       <a href="index.php">HOME</a>
       <a href="aboutUs.php">About Us</a>
-      <a href="">Our Services</a>
+      <a href="" id="servicesToggle">Our Services</a>
+                  <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
+                    <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
+                    <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
+                  </div>
+
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
   </dialog>
@@ -156,7 +227,7 @@
 <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
-      “The performance of the risk team was outstanding and exceeded our expectations. Through their agility and adaptability to changing environments, they successfully performed and delivered complex investigations in complex security settings.”
+"The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="auth">
       – <strong>Head of Investigations - IFRC</strong>
@@ -173,7 +244,7 @@
 
 <div class="services-menu">
   <div class="services-column logo-column">
-    <img src="your-logo.png" alt="Logo" class="logo">
+    <!-- <img src="your-logo.png" alt="Logo" class="logo"> -->
     <h2>Services</h2>
   </div>
 

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Business Support Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="auditAndAssurance.css">
   <link rel="stylesheet" href="styles.css">
@@ -13,14 +14,14 @@
   <div class="overlay"></div>
 
   <div class="nav-container">
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt=" Logo">
       
-    </div>
-
+    </div> -->
+      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
     <nav class="nav-links">
       <a href="index.php">Home</a>
-      <a href="#">About Adili <span class="arrow">&#9662;</span></a>
+      <a href="aboutUs.php">About Adili <span class="arrow">&#9662;</span></a>
 
         <nav class="navbar">
         <ul class="nav-links">
@@ -40,14 +41,15 @@
       <a href="#">Media <span class="arrow"></span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
-      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
+
+
+    </nav>
 
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
 
 
-    </nav>
   </div>
 
   <h1 class="page-title">Business support solutions</h1>
@@ -80,19 +82,19 @@
         </ul>
       </div>
 
- <div class="offer-right">
-  <h3>Why We’re Unique</h3>
-  <p>
-    At Bellwick Africa LLP, we combine technical excellence with a deep understanding of our clients’ industries to deliver tailored, practical solutions. 
-    What sets us apart is our commitment to long-term relationships, our partner-led approach, and our ability to adapt to evolving business needs. 
-    Backed by a diverse and experienced team, we provide clear, actionable advice that supports sustainable growth and informed decision-making.
-  </p>
-</div>
+    <div class="offer-right">
+      <h3>Why We’re Unique</h3>
+      <p>
+        At Bellwick Africa LLP, we combine technical excellence with a deep understanding of our clients’ industries to deliver tailored, practical solutions. 
+        What sets us apart is our commitment to long-term relationships, our partner-led approach, and our ability to adapt to evolving business needs. 
+        Backed by a diverse and experienced team, we provide clear, actionable advice that supports sustainable growth and informed decision-making.
+      </p>
+    </div>
 
     </div>
   </section>
 
-    <section class="enquire-section">
+   <section class="enquire-section">
     <div class="enquire-container">
       <div class="enquire-left">
       <h2>Enquire</h2>
@@ -102,22 +104,8 @@
       Whether you need audit, tax, or advisory services, our experienced team is ready to listen, understand your needs, and provide tailored guidance. 
       Get in touch with us today to explore how we can work together to achieve your goals.
       </p>
-      <h2>Business support solutions</h2>
-      <h3>Outsourced Accounting</h3>
-      <p>
-    <strong> Accounts preparation, minus the pressure</strong> <br>
-     Running a business while keeping on top of company accounts and tax is incredibly demanding. Having a team you can consistently depend on is key to staying focused on success. Whether you’re a sole trader, partnership or limited company, our expert accountants take the stress out of preparing your accounts.
-      </p>
-      <h3>Payroll & Pensions services</h3>
-      <p>
-
- <strong> Supporting your business and the people that make it. </strong> <br>
-
-Ensuring your staff’s salaries and pensions are consistently paid is crucial for a happy, productive workplace. We take the burden of managing payroll and pensions off your shoulders. Acting as an extension of your business, we give you complete assurance that your team’s payments are in the hands of experienced, responsible experts, so you can focus on driving your company forward.
+    </div>
       
-    </p>
-      </div>
-
       <div class="enquire-right">
         <div class="country-tabs">
         <div class="office-details">
@@ -132,6 +120,27 @@ Ensuring your staff’s salaries and pensions are consistently paid is crucial f
         </div>
       </div>
     </div>
+
+      <div class="enquire-left">
+      <h2>Business support solutions</h2>
+      <h3>Outsourced Accounting</h3>
+      <p>
+      <strong> Accounts preparation, minus the pressure</strong> <br>
+      Running a business while keeping on top of company accounts and tax is incredibly demanding. Having a team you can consistently depend on is key to staying focused on success. Whether you’re a sole trader, partnership or limited company, our expert accountants take the stress out of preparing your accounts.
+      </p>
+      </div>
+      
+      <div class="enquire-right enquire-left">
+      <h3>Payroll & Pensions services</h3>
+      <p>
+
+      <strong> Supporting your business and the people that make it. </strong> <br>
+
+      Ensuring your staff’s salaries and pensions are consistently paid is crucial for a happy, productive workplace. We take the burden of managing payroll and pensions off your shoulders. Acting as an extension of your business, we give you complete assurance that your team’s payments are in the hands of experienced, responsible experts, so you can focus on driving your company forward.
+          
+        </p>
+      </div>
+
   </section>
 
   <section class="services-preview">
@@ -146,19 +155,27 @@ Ensuring your staff’s salaries and pensions are consistently paid is crucial f
 
 
 
-  <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
+    <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
       <a href="index.php">HOME</a>
       <a href="aboutUs.php">About Us</a>
-      <a href="">Our Services</a>
+
+      <a href="" id="servicesToggle">Our Services</a>
+                  <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
+                    <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
+                    <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
+                  </div>
+
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
   </dialog>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
 <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
-      “The performance of the risk team was outstanding and exceeded our expectations. Through their agility and adaptability to changing environments, they successfully performed and delivered complex investigations in complex security settings.”
+"The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="autho">
       – <strong>Head of Investigations - IFRC</strong>
@@ -175,7 +192,7 @@ Ensuring your staff’s salaries and pensions are consistently paid is crucial f
 
 <div class="services-menu" id="services-menu">
   <div class="services-column logo-column">
-    <img src="your-logo.png" alt="Company Logo" class="logo">
+    <!-- <img src="your-logo.png" alt="Company Logo" class="logo"> -->
     <h2>Services</h2>
   </div>
 
@@ -257,6 +274,18 @@ Ensuring your staff’s salaries and pensions are consistently paid is crucial f
     <i class="fas fa-arrow-up"></i>
   </a>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const servicesToggle = document.getElementById('servicesToggle');
+    const servicesLinks = document.getElementById('servicesLinks');
+
+    servicesToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      servicesLinks.style.display = (servicesLinks.style.display === 'none') ? 'block' : 'none';
+    });
+  });
+</script>
 
 </body>
 </html>

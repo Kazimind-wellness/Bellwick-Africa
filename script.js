@@ -31,25 +31,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Wheel/touch navigation
-    let isScrolling = false;
-    window.addEventListener('wheel', handleScroll, { passive: false });
-    window.addEventListener('touchmove', handleScroll, { passive: false });
+        // Arrow buttons
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+            if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (currentSection > 0) {
+                showSection(currentSection - 1);
+                resetRotation();
+                }
+            });
+            }
 
-    function handleScroll(e) {
-        if (isScrolling) return;
-        
-        isScrolling = true;
-        const delta = e.deltaY || (e.touches ? e.touches[0].clientY : 0);
-        
-        if (delta > 0 && currentSection < sections.length - 1) {
-            showSection(currentSection + 1);
-        } else if (delta < 0 && currentSection > 0) {
-            showSection(currentSection - 1);
-        }
-        
-        setTimeout(() => { isScrolling = false; }, 1000);
-    }
+            if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                if (currentSection < sectionCount - 1) {
+                showSection(currentSection + 1);
+                resetRotation();
+                }
+            });
+            }
 
     function showSection(index) {
         sections.forEach((section, i) => {
@@ -61,14 +62,15 @@ document.addEventListener('DOMContentLoaded', function() {
         currentSection = index;
     }
 
-    // Reset timer on manual navigation
-    function resetRotation() {
+        function resetRotation() {
         clearInterval(rotationInterval);
         rotationInterval = setInterval(() => {
             currentSection = (currentSection + 1) % sectionCount;
             showSection(currentSection);
         }, 5000);
     }
+
+
 
     // Dialog functionality
     const openButton = document.querySelector("#openMenu");

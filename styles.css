@@ -98,6 +98,7 @@ a {
     padding: 20px 30px;
     box-sizing: border-box;
     pointer-events: none;
+    background: rgba(0, 0, 0, 0.4);
     /* allow background interactions */
 }
 
@@ -122,10 +123,12 @@ a {
 
 .right-nav {
     right: 30px;
+    position: absolute;
+    top: 100;
 }
 
 .dots-container {
-    position: absolute;
+    position: relative;
     bottom: 20px;
     left: 0;
     right: 0;

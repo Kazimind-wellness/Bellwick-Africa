@@ -1,7 +1,65 @@
+<?php
+use Dotenv\Dotenv;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require __DIR__ . '/vendor/autoload.php';
+
+
+// Load .env variables
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form values safely
+    $name    = htmlspecialchars($_POST['name']);
+    $email   = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+
+    $mail = new PHPMailer(true);
+
+    try {
+        // Server settings
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';      // Use your SMTP server
+        $mail->SMTPAuth   = true;
+        $mail->Username = $_ENV['EMAIL_USERNAME'];
+        $mail->Password = $_ENV['EMAIL_PASSWORD']; // App password or SMTP password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port       = 587;
+
+        // Recipients
+        $mail->setFrom($email, $name);
+        $mail->addAddress($_ENV['EMAIL_RECEIVER'], 'Bellwick Admin'); // Receiver email
+
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = "New Contact Form Message: $subject";
+        $mail->Body    = "
+            <h3>New Message from Bellwick africa Website.</h3>
+            <p><strong>Name:</strong> $name</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Subject:</strong> $subject</p>
+            <p><strong>Message:</strong><br>$message</p>
+        ";
+        $mail->AltBody = "Name: $name\nEmail: $email\nSubject: $subject\nMessage:\n$message";
+
+        $mail->send();
+        // Optional: redirect back to thank-you page
+        header("Location: contacts.php");
+        exit;
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="contacts.css">
@@ -13,11 +71,11 @@
   <div class="overlay"></div>
 
   <div class="nav-container">
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt=" Logo">
       
-    </div>
-
+    </div> -->
+      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
     <nav class="nav-links">
       <a href="index.php">Home</a>
       <a href="aboutUs.php">About Us<span class="arrow">&#9662;</span></a>
@@ -40,12 +98,11 @@
       <a href="#">Media <span class="arrow">&#9662;</span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
-      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
-
+    
+    </nav>
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
-    </nav>
     </nav>
   </div>
 
@@ -54,7 +111,7 @@
 
 
   <section class="contact-form-section">
-    <form class="contact-form">
+    <form class="contact-form" method="post">
       <input type="text" name="name" placeholder="Name" required />
       <input type="email" name="email" placeholder="Email" required />
       <input type="text" name="subject" placeholder="Subject" required />
@@ -67,17 +124,25 @@
     <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
       <a href="index.php">HOME</a>
       <a href="aboutUs.php">About Us</a>
-      <a href="">Our Services</a>
+
+      <a href="" id="servicesToggle">Our Services</a>
+                  <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
+                    <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
+                    <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
+                  </div>
+
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
   </dialog>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
 
 <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
-      “The performance of the risk team was outstanding and exceeded our expectations. Through their agility and adaptability to changing environments, they successfully performed and delivered complex investigations in complex security settings.”
+"The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="autho">
       – <strong>Head of Investigations - IFRC</strong>
@@ -93,28 +158,10 @@
 
 <div class="services-menu">
   <div class="services-column logo-column">
-    <img src="your-logo.png" alt="Company Logo" class="logo">
+    <!-- <img src="your-logo.png" alt="Company Logo" class="logo"> -->
     <h2>Services</h2>
   </div>
 
-  <div class="services-column">
-    <h3>Corporate Services</h3>
-    <ul>
-      <li>Corporate Secretarial and Administration</li>
-      <li>Security Trustee</li>
-      <li>Escrow Agent</li>
-      <li>Distress and Recovery</li>
-    </ul>
-
-    <h3>Outsourcing Services</h3>
-    <ul>
-      <li>Accounting</li>
-      <li>Payroll</li>
-      <li>Tax Compliance</li>
-      <li>Immigration</li>
-      <li>Managed IT Services</li>
-    </ul>
-  </div>
 
   <div class="services-column">
     <h3>Audit and Assurance</h3>
@@ -177,6 +224,17 @@
   </a>
 </footer>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const servicesToggle = document.getElementById('servicesToggle');
+    const servicesLinks = document.getElementById('servicesLinks');
+
+    servicesToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      servicesLinks.style.display = (servicesLinks.style.display === 'none') ? 'block' : 'none';
+    });
+  });
+</script>
 
 </body>
 </html>

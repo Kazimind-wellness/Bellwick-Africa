@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="aboutUs.css">
@@ -13,11 +14,11 @@
   <div class="overlay"></div>
 
   <div class="nav-container">
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt="">
       
-    </div>
-
+    </div> -->
+ <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
     <nav class="nav-links">
       <a href="index.php">Home</a>
       <a href="aboutUs.php">About US<span class="arrow">&#9662;</span></a>
@@ -39,13 +40,13 @@
       <a href="#">Media <span class="arrow">&#9662;</span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
-      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
-
-      <div class="right-side">
-          <a href="#" class="menu" id="openMenu"></a>
-      </div>
+     
 
     </nav>
+
+  <div class="right-side">
+          <a href="#" class="menu" id="openMenu"></a>
+      </div>
   </div>
 
   <h1 class="page-title">OVER 30 YEARS OF EXPIRIENCE</h1>
@@ -75,7 +76,7 @@ Our goal is to add genuine value to your business. To achieve this, we offer ong
     </div>
   </section>
 
-  <section class="video-section">
+  <!-- <section class="video-section">
     <div class="video-container">
       <iframe 
         src="https://www.youtube.com/watch?v=iwcjcSEmw60&list=RDiwcjcSEmw60&start_radio=1" 
@@ -88,7 +89,7 @@ Our goal is to add genuine value to your business. To achieve this, we offer ong
     <p class="video-caption">
       Our name, Bellwick (Swahili for diligent/impartial/just/righteous) was chosen because it represents our ideals and values.
     </p>
-  </section>
+  </section> -->
 
 <section class="why-clients">
   <div class="container">
@@ -122,17 +123,26 @@ Our goal is to add genuine value to your business. To achieve this, we offer ong
     <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
       <a href="index.php">HOME</a>
       <a href="aboutUs.php">About Us</a>
-      <a href="">Our Services</a>
+
+      <a href="" id="servicesToggle">Our Services</a>
+                  <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
+                    <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
+                    <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
+                  </div>
+
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
   </dialog>
-    <script src="script.js"></script>
+  
+  <script src="script.js"></script>
 
 
 <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
-      “The performance of the risk team was outstanding and exceeded our expectations. Through their agility and adaptability to changing environments, they successfully performed and delivered complex investigations in complex security settings.”
+      "The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="autho">
       – <strong>Head of Investigations - IFRC</strong>
@@ -148,7 +158,7 @@ Our goal is to add genuine value to your business. To achieve this, we offer ong
 
 <div class="services-menu" id="services-menu">
   <div class="services-column logo-column">
-    <img src="your-logo.png" alt="Company Logo" class="logo">
+    <!-- <img src="your-logo.png" alt="Company Logo" class="logo"> -->
     <h2>Services</h2>
   </div>
 
@@ -212,6 +222,19 @@ Our goal is to add genuine value to your business. To achieve this, we offer ong
     <i class="fas fa-arrow-up"></i>
   </a>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const servicesToggle = document.getElementById('servicesToggle');
+    const servicesLinks = document.getElementById('servicesLinks');
+
+    servicesToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      servicesLinks.style.display = (servicesLinks.style.display === 'none') ? 'block' : 'none';
+    });
+  });
+</script>
+
 
 </body>
 </html>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audit & Assurance</title>
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="auditAndAssurance.css">
@@ -13,11 +14,10 @@
   <div class="overlay"></div>
 
   <div class="nav-container">
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt="Logo">
-      
-    </div>
-
+    </div> -->
+      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
     <nav class="nav-links">
       <a href="index.php">Home</a>
       <a href="aboutUs.php">About Us<span class="arrow">&#9662;</span></a>
@@ -40,12 +40,12 @@
       <a href="#">Media <span class="arrow"></span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
-      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
+    </nav>
 
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
-    </nav>
+
   </div>
 
   <h1 class="page-title">Tax services</h1>
@@ -93,62 +93,19 @@
 
 <section class="enquire-section">
   <div class="enquire-container">
+
     <div class="enquire-left">
-      <h2>Tax Compliance</h2>
-
-      <h3>Direct Taxes</h3>
-      <p><strong>Income Tax Returns:</strong><br>
-        - Preparation and filing of corporate and individual tax returns<br>
-        - Advising on installment and final tax payments<br>
-        - Handling correspondence with Kenya Revenue Authority (KRA)
-      </p>
-
-      <h3>Withholding Tax (WHT)</h3>
+      <h2>Enquire</h2>
+      <h3>Let’s Start a Conversation That Moves Your Business Forward</h3>
       <p>
-        - Advising on WHT implications for payments<br>
-        - Assisting in preparing documentation for WHT submission
-      </p>
-
-      <h3>PAYE</h3>
-      <p>
-        - Monthly PAYE calculations, filing, and payment generation<br>
-        - Reviewing employment contracts and advising on tax structures<br>
-        - Compensation planning, expatriate tax, treaty reliefs & compliance
-      </p>
-
-      <h2>Indirect Taxes</h2>
-
-      <h3>Value Added Tax (VAT)</h3>
-      <p>
-        - VAT registration guidance and returns filing<br>
-        - Reviewing income and expenses to optimize VAT recovery<br>
-        - Minimizing VAT due through effective planning
-      </p>
-
-      <h3>Customs and Excise Duty</h3>
-      <p>
-        - Tariff classification and customs valuation<br>
-        - Clearance documentation and EACCMA compliance<br>
-        - Accessing incentives, remissions, rebates, and refunds
-      </p>
-
-      <h3>Excise Duty Compliance</h3>
-      <p>
-        - Advice on excisable goods and services<br>
-        - Licensing and excise returns<br>
-        - Managing timing of excise liability
-      </p>
-
-      <h2>Tax Advisory Services</h2>
-      <p>
-        - Transaction-specific tax implications and planning<br>
-        - Structuring for tax efficiency in mergers and acquisitions<br>
-        - VAT refund audits and health checks<br>
-        - Support with KRA audits, inquiries, and compliance
+      At Bellwick Africa LLP, we’re here to support your business with practical insights and strategic solutions. 
+      Whether you need audit, tax, or advisory services, our experienced team is ready to listen, understand your needs, and provide tailored guidance. 
+      Get in touch with us today to explore how we can work together to achieve your goals.
       </p>
     </div>
 
-    <div class="enquire-right">
+
+      <div class="enquire-right enquire-left">
       <div class="country-tabs">
         <div class="office-details">
           <p><strong>Tel:</strong> <span class="contact-highlight">+254 709 676 000</span></p>
@@ -162,6 +119,78 @@
         </div>
       </div>
     </div>
+
+    <div class="enquire-left" style="width: 100%;">
+      <h2>Tax Advisory Services</h2>
+      <p>
+        - Transaction-specific tax implications and planning<br>
+        - Structuring for tax efficiency in mergers and acquisitions<br>
+        - VAT refund audits and health checks<br>
+        - Support with KRA audits, inquiries, and compliance
+      </p>
+    </div>
+
+
+    <div class="enquire-left">
+      <h2>Tax Compliance</h2>
+
+      <h3>Direct Taxes</h3>
+      <p><strong>Income Tax Returns:</strong><br>
+        - Preparation and filing of corporate and individual tax returns<br>
+        - Advising on installment and final tax payments<br>
+        - Handling correspondence with Kenya Revenue Authority (KRA)
+      </p>
+    </div>
+
+      <div class="enquire-right enquire-left"> 
+      <h3>Withholding Tax (WHT)</h3>
+      <p>
+        - Advising on WHT implications for payments<br>
+        - Assisting in preparing documentation for WHT submission
+      </p>
+      </div>
+
+    <div class="enquire-left">
+      <h3>PAYE</h3>
+      <p>
+        - Monthly PAYE calculations, filing, and payment generation<br>
+        - Reviewing employment contracts and advising on tax structures<br>
+        - Compensation planning, expatriate tax, treaty reliefs & compliance
+      </p>
+    </div>
+
+    <div class="enquire-right enquire-left"> 
+
+      <h2>Indirect Taxes</h2>
+
+      <h3>Value Added Tax (VAT)</h3>
+      <p>
+        - VAT registration guidance and returns filing<br>
+        - Reviewing income and expenses to optimize VAT recovery<br>
+        - Minimizing VAT due through effective planning
+      </p>
+
+    </div>
+
+    <div class="enquire-left">
+      <h3>Customs and Excise Duty</h3>
+      <p>
+        - Tariff classification and customs valuation<br>
+        - Clearance documentation and EACCMA compliance<br>
+        - Accessing incentives, remissions, rebates, and refunds
+      </p>
+    </div>
+
+    <div class="enquire-right enquire-left"> 
+      <h3>Excise Duty Compliance</h3>
+      <p>
+        - Advice on excisable goods and services<br>
+        - Licensing and excise returns<br>
+        - Managing timing of excise liability
+      </p>
+    </div>
+
+
 </section>
 
 <section class="services-preview">
@@ -174,11 +203,18 @@
   </div>
 </section>
 
-
-      <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
+    <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
       <a href="index.php">HOME</a>
       <a href="aboutUs.php">About Us</a>
-      <a href="">Our Services</a>
+
+      <a href="" id="servicesToggle">Our Services</a>
+                  <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
+                    <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
+                    <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
+                  </div>
+
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
   </dialog>
@@ -187,7 +223,7 @@
 <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
-      “The performance of the risk team was outstanding and exceeded our expectations. Through their agility and adaptability to changing environments, they successfully performed and delivered complex investigations in complex security settings.”
+"The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="autho">
       – <strong>Head of Investigations - IFRC</strong>
@@ -204,7 +240,7 @@
 
 <div class="services-menu" id="services-menu">
   <div class="services-column logo-column">
-    <img src="your-logo.png" alt="Company Logo" class="logo">
+    <!-- <img src="your-logo.png" alt="Company Logo" class="logo"> -->
     <h2>Services</h2>
   </div>
 
@@ -267,6 +303,18 @@
     <i class="fas fa-arrow-up"></i>
   </a>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const servicesToggle = document.getElementById('servicesToggle');
+    const servicesLinks = document.getElementById('servicesLinks');
+
+    servicesToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      servicesLinks.style.display = (servicesLinks.style.display === 'none') ? 'block' : 'none';
+    });
+  });
+</script>
 
 </body>
 </html>

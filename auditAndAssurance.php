@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Audit & Assurance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="auditAndAssurance.css">
   <link rel="stylesheet" href="styles.css">
@@ -13,13 +14,13 @@
   <div class="overlay"></div>
 
   <div class="nav-container">
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt="Bellwick Logo">
-    </div>
-
+    </div> -->
+   <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
     <nav class="nav-links">
       <a href="index.php">Home</a>
-      <a href="#">About Us <span class="arrow">&#9662;</span></a>
+      <a href="aboutUs.php">About Us <span class="arrow">&#9662;</span></a>
 
         <nav class="navbar">
         <ul class="nav-links">
@@ -39,14 +40,16 @@
       <a href="#">Media <span class="arrow"></span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
-      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
+   
 
+
+    </nav>
+
+    
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
 
-
-    </nav>
   </div>
 
   <h1 class="page-title">Audit and Assurance</h1>
@@ -103,25 +106,7 @@
       Whether you need audit, tax, or advisory services, our experienced team is ready to listen, understand your needs, and provide tailored guidance. 
       Get in touch with us today to explore how we can work together to achieve your goals.
       </p>
-      <h2>Audit and Assurance</h2>
-      <h3>External Audit</h3>
-      <p>
-      We spend time to really understand you, your business and your objectives.  We undertake work to the highest standards while causing the least disruption to your day-to-day operations during the audit. 
-Our comprehensive audit approach will be tailored to consider whether your financial statements present a true and fair view of your business and provides scope for our specialists to suggest potential improvements to your systems and operations. We ensure all issues or concerns identified are handled sensitively and with a constructive, common-sense approach.
-      </p>
-      <h3>Assurance Reviews</h3>
-      <p>
-      An assurance review provides readers of your financial statements with a certain level of comfort over the figures and information without requiring a full audit. Our team has a wealth of experience in conducting assurance reviews, giving your stakeholders the comfort of knowing your financial statements have been independently reviewed.
-      </p>
-      <h3>Joint Financial Audits</h3>
-      <p>
-      Our unique skill set and experience give us an unparalleled opportunity to collaborate with other audit firms, helping them conduct audits in Kenya or internationally.
-      </p>
-      <h3>Audit Preparation Support</h3>
-      <p>
-     Preparing for audits can sometimes be daunting. Bellwick helps non-audit clients get ready for their statutory audits, ensuring compliance while allowing them to focus on their business. We also assist clients in preparing financial statements that meet local regulatory requirements.
-      </p>
-      </div>
+    </div>
 
       <div class="enquire-right">
         <div class="country-tabs">
@@ -137,6 +122,37 @@ Our comprehensive audit approach will be tailored to consider whether your finan
         </div>
       </div>
     </div>
+
+    <div class="enquire-left">
+      <h2>Audit and Assurance</h2>
+      <h3>External Audit</h3>
+      <p>
+      We spend time to really understand you, your business and your objectives.  We undertake work to the highest standards while causing the least disruption to your day-to-day operations during the audit. 
+      Our comprehensive audit approach will be tailored to consider whether your financial statements present a true and fair view of your business and provides scope for our specialists to suggest potential improvements to your systems and operations. We ensure all issues or concerns identified are handled sensitively and with a constructive, common-sense approach.
+      </p>
+    </div>
+
+    <div class="enquire-left enquire-right">
+      <h3>Assurance Reviews</h3>
+      <p>
+      An assurance review provides readers of your financial statements with a certain level of comfort over the figures and information without requiring a full audit. Our team has a wealth of experience in conducting assurance reviews, giving your stakeholders the comfort of knowing your financial statements have been independently reviewed.
+      </p>
+    </div>
+  <div class="enquire-left">
+      <h3>Joint Financial Audits</h3>
+      <p>
+      Our unique skill set and experience give us an unparalleled opportunity to collaborate with other audit firms, helping them conduct audits in Kenya or internationally.
+      </p>
+</div>
+    <div class="enquire-left enquire-right">
+      <h3>Audit Preparation Support</h3>
+      <p>
+     Preparing for audits can sometimes be daunting. Bellwick helps non-audit clients get ready for their statutory audits, ensuring compliance while allowing them to focus on their business. We also assist clients in preparing financial statements that meet local regulatory requirements.
+      </p>
+      </div>
+      </div>
+
+  
   </section>
 
   <section class="services-preview">
@@ -154,16 +170,24 @@ Our comprehensive audit approach will be tailored to consider whether your finan
     <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
       <a href="index.php">HOME</a>
       <a href="aboutUs.php">About Us</a>
-      <a href="">Our Services</a>
+
+      <a href="" id="servicesToggle">Our Services</a>
+                  <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
+                    <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
+                    <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
+                  </div>
+
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
   </dialog>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
 <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
-      “The performance of the risk team was outstanding and exceeded our expectations. Through their agility and adaptability to changing environments, they successfully performed and delivered complex investigations in complex security settings.”
+      "The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="autho">
       – <strong>Head of Investigations - IFRC</strong>
@@ -180,7 +204,7 @@ Our comprehensive audit approach will be tailored to consider whether your finan
 
 <div class="services-menu" id="services-menu">
   <div class="services-column logo-column">
-    <img src="your-logo.png" alt="Company Logo" class="logo">
+    <!-- <img src="your-logo.png" alt="Company Logo" class="logo"> -->
     <h2>Services</h2>
   </div>
 
@@ -262,6 +286,20 @@ Our comprehensive audit approach will be tailored to consider whether your finan
     <i class="fas fa-arrow-up"></i>
   </a>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const servicesToggle = document.getElementById('servicesToggle');
+    const servicesLinks = document.getElementById('servicesLinks');
+
+    servicesToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      servicesLinks.style.display = (servicesLinks.style.display === 'none') ? 'block' : 'none';
+    });
+  });
+</script>
+
+
 
 </body>
 </html>

@@ -75,12 +75,13 @@
     flex: 1;
 }
 
+
 .text-content h2 {
     color: #b23b0f;
 }
 
 .text-content p {
-    font-size: 26px;
+    font-size: 20px;
     color: #444;
 }
 
@@ -97,3 +98,58 @@
 .action-button:hover {
     background-color: #00688b;
 }
+
+.arrow-buttons {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.arrow-buttons button {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    pointer-events: auto;
+    transition: background 0.3s ease;
+}
+
+.arrow-buttons button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+.mobile{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+     .mobile{
+        display: inline;
+     }
+
+    .container{
+        display: none;
+     }
+
+    .capabilities-section p{
+        font-size:  15px;
+     }
+
+    .fullpage-section{
+        height: 60vh;
+    }
+
+}
+
