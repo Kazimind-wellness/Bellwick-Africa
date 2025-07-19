@@ -12,7 +12,7 @@
 
 <header class="adili-header services-header">
   <div class="overlay"></div>
-
+ <div class="nav-background"> 
   <div class="nav-container">
     <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt="Logo">
@@ -36,8 +36,8 @@
         </ul>
         </nav>
 
-      <a href="#">Our Offices <span class="arrow"></span></a>
-      <a href="#">Media <span class="arrow"></span></a>
+      <a href="tax.php#ofices">Our Offices <span class="arrow"></span></a>
+      <a href="tax.php">Tax Services <span class="arrow"></span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
     </nav>
@@ -45,162 +45,163 @@
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
-
+      </div>
   </div>
 
   <h1 class="page-title">Tax services</h1>
 </header>
+<section class="wholeContent">
 
-
-<section class="audit-section">
-  <div class="container">
-    <div class="audit-text">
-      <h2>Tax Services</h2>
-      <p>
-        Whether you are an individual, sole trader, or corporate entity, you are bound by a complex tax system that affects your daily decisions and long-term strategy. Our team of tax experts provides advice and support to relieve you of uncertainty, helping you move forward with confidence and clarity.
-      </p>
-      <a href="contacts.php" class="enquire-button">ENQUIRE</a>
-    </div>
-    <div class="audit-image">
-      <img src="https://media.istockphoto.com/id/1352173615/photo/nairobi-skyline.jpg?s=2048x2048&w=is&k=20&c=Qhi7Xhm8R9EizCft5nwvEhaxd6lgelLXe6Rnn5Y7lbw=" alt="Tax Services Graphic">
-    </div>
-  </div>
-</section>
-
-<section class="offer-section">
-  <div class="offer-container">
-    <div class="offer-left">
-      <h2 class="offer-title">Our Tax Services</h2>
-      <ul class="offer-list">
-        <li>Tax Compliance</li>
-        <li>Direct & Indirect Taxes</li>
-        <li>PAYE & Employment Tax Structuring</li>
-        <li>Customs & Excise Duty</li>
-        <li>Tax Advisory & KRA Audit Support</li>
-      </ul>
-    </div>
-
-    <div class="offer-right">
-      <h3>Why We’re Unique</h3>
-      <p>
-        At Bellwick Africa LLP, we combine technical excellence with a deep understanding of our clients’ industries to deliver tailored, practical solutions. 
-        What sets us apart is our commitment to long-term relationships, our partner-led approach, and our ability to adapt to evolving business needs. 
-        Backed by a diverse and experienced team, we provide clear, actionable advice that supports sustainable growth and informed decision-making.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="enquire-section">
-  <div class="enquire-container">
-
-    <div class="enquire-left">
-      <h2>Enquire</h2>
-      <h3>Let’s Start a Conversation That Moves Your Business Forward</h3>
-      <p>
-      At Bellwick Africa LLP, we’re here to support your business with practical insights and strategic solutions. 
-      Whether you need audit, tax, or advisory services, our experienced team is ready to listen, understand your needs, and provide tailored guidance. 
-      Get in touch with us today to explore how we can work together to achieve your goals.
-      </p>
-    </div>
-
-
-      <div class="enquire-right enquire-left">
-      <div class="country-tabs">
-        <div class="office-details">
-          <p><strong>Tel:</strong> <span class="contact-highlight">+254 709 676 000</span></p>
-          <p><strong>Email:</strong> <a href="mailto:info@bellwickllp.com" class="contact-highlight">info@bellwickllp.com</a></p>
-          <p>
-            <strong>Bellwick Africa LLP</strong><br>
-            Britam Tower, 24th Floor, Hospital Road,<br>
-            P.O. Box 28018-00100,<br>
-            Nairobi, Kenya
-          </p>
+      <section class="audit-section">
+        <div class="container">
+          <div class="audit-text">
+            <h2>Tax Services</h2>
+            <p>
+              Whether you are an individual, sole trader, or corporate entity, you are bound by a complex tax system that affects your daily decisions and long-term strategy. Our team of tax experts provides advice and support to relieve you of uncertainty, helping you move forward with confidence and clarity.
+            </p>
+            <a href="contacts.php" class="enquire-button">ENQUIRE</a>
+          </div>
+          <div class="audit-image">
+            <img src="beautifulCity.jpg" alt="Tax Services Graphic">
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="enquire-left" style="width: 100%;">
-      <h2>Tax Advisory Services</h2>
-      <p>
-        - Transaction-specific tax implications and planning<br>
-        - Structuring for tax efficiency in mergers and acquisitions<br>
-        - VAT refund audits and health checks<br>
-        - Support with KRA audits, inquiries, and compliance
-      </p>
-    </div>
+      <section class="offer-section">
+        <div class="offer-container">
+          <div class="offer-left">
+            <h2 class="offer-title">Our Tax Services</h2>
+            <ul class="offer-list">
+              <li>Tax Compliance</li>
+              <li>Direct & Indirect Taxes</li>
+              <li>PAYE & Employment Tax Structuring</li>
+              <li>Customs & Excise Duty</li>
+              <li>Tax Advisory & KRA Audit Support</li>
+            </ul>
+          </div>
 
+          <div class="offer-right" id="ofices">
+            <h3>Why We’re Unique</h3>
+            <p>
+              At Bellwick Africa LLP, we combine technical excellence with a deep understanding of our clients’ industries to deliver tailored, practical solutions. 
+              What sets us apart is our commitment to long-term relationships, our partner-led approach, and our ability to adapt to evolving business needs. 
+              Backed by a diverse and experienced team, we provide clear, actionable advice that supports sustainable growth and informed decision-making.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <div class="enquire-left">
-      <h2>Tax Compliance</h2>
+      <section class="enquire-section">
+        <div class="enquire-container">
 
-      <h3>Direct Taxes</h3>
-      <p><strong>Income Tax Returns:</strong><br>
-        - Preparation and filing of corporate and individual tax returns<br>
-        - Advising on installment and final tax payments<br>
-        - Handling correspondence with Kenya Revenue Authority (KRA)
-      </p>
-    </div>
-
-      <div class="enquire-right enquire-left"> 
-      <h3>Withholding Tax (WHT)</h3>
-      <p>
-        - Advising on WHT implications for payments<br>
-        - Assisting in preparing documentation for WHT submission
-      </p>
-      </div>
-
-    <div class="enquire-left">
-      <h3>PAYE</h3>
-      <p>
-        - Monthly PAYE calculations, filing, and payment generation<br>
-        - Reviewing employment contracts and advising on tax structures<br>
-        - Compensation planning, expatriate tax, treaty reliefs & compliance
-      </p>
-    </div>
-
-    <div class="enquire-right enquire-left"> 
-
-      <h2>Indirect Taxes</h2>
-
-      <h3>Value Added Tax (VAT)</h3>
-      <p>
-        - VAT registration guidance and returns filing<br>
-        - Reviewing income and expenses to optimize VAT recovery<br>
-        - Minimizing VAT due through effective planning
-      </p>
-
-    </div>
-
-    <div class="enquire-left">
-      <h3>Customs and Excise Duty</h3>
-      <p>
-        - Tariff classification and customs valuation<br>
-        - Clearance documentation and EACCMA compliance<br>
-        - Accessing incentives, remissions, rebates, and refunds
-      </p>
-    </div>
-
-    <div class="enquire-right enquire-left"> 
-      <h3>Excise Duty Compliance</h3>
-      <p>
-        - Advice on excisable goods and services<br>
-        - Licensing and excise returns<br>
-        - Managing timing of excise liability
-      </p>
-    </div>
+          <div class="enquire-left">
+            <h2>Enquire</h2>
+            <h3>Let’s Start a Conversation That Moves Your Business Forward</h3>
+            <p>
+            At Bellwick Africa LLP, we’re here to support your business with practical insights and strategic solutions. 
+            Whether you need audit, tax, or advisory services, our experienced team is ready to listen, understand your needs, and provide tailored guidance. 
+            Get in touch with us today to explore how we can work together to achieve your goals.
+            </p>
+          </div>
 
 
-</section>
+            <div class="enquire-right enquire-left">
+            <div class="country-tabs">
+              <div class="office-details">
+                <p><strong>Tel:</strong> <span class="contact-highlight">+254 709 676 000</span></p>
+                <p><strong>Email:</strong> <a href="mailto:info@bellwickllp.com" class="contact-highlight">info@bellwickllp.com</a></p>
+                <p>
+                  <strong>Bellwick Africa LLP</strong><br>
+                  Britam Tower, 24th Floor, Hospital Road,<br>
+                  P.O. Box 28018-00100,<br>
+                  Nairobi, Kenya
+                </p>
+              </div>
+            </div>
+          </div>
 
-<section class="services-preview">
-  <h2 class="services-title">View All Services</h2>
-  <div class="services-box">
-    <p class="services-text">
-      Visit our services page to view all other services we offer.
-    </p>
-    <a href="#services-menu" class="view-button">VIEW →</a>
-  </div>
+          <div class="enquire-left" style="width: 100%;">
+            <h2>Tax Advisory Services</h2>
+            <p>
+              - Transaction-specific tax implications and planning<br>
+              - Structuring for tax efficiency in mergers and acquisitions<br>
+              - VAT refund audits and health checks<br>
+              - Support with KRA audits, inquiries, and compliance
+            </p>
+          </div>
+
+
+          <div class="enquire-left">
+            <h2>Tax Compliance</h2>
+
+            <h3>Direct Taxes</h3>
+            <p><strong>Income Tax Returns:</strong><br>
+              - Preparation and filing of corporate and individual tax returns<br>
+              - Advising on installment and final tax payments<br>
+              - Handling correspondence with Kenya Revenue Authority (KRA)
+            </p>
+          </div>
+
+            <div class="enquire-right enquire-left"> 
+            <h3>Withholding Tax (WHT)</h3>
+            <p>
+              - Advising on WHT implications for payments<br>
+              - Assisting in preparing documentation for WHT submission
+            </p>
+            </div>
+
+          <div class="enquire-left">
+            <h3>PAYE</h3>
+            <p>
+              - Monthly PAYE calculations, filing, and payment generation<br>
+              - Reviewing employment contracts and advising on tax structures<br>
+              - Compensation planning, expatriate tax, treaty reliefs & compliance
+            </p>
+          </div>
+
+          <div class="enquire-right enquire-left"> 
+
+            <h2>Indirect Taxes</h2>
+
+            <h3>Value Added Tax (VAT)</h3>
+            <p>
+              - VAT registration guidance and returns filing<br>
+              - Reviewing income and expenses to optimize VAT recovery<br>
+              - Minimizing VAT due through effective planning
+            </p>
+
+          </div>
+
+          <div class="enquire-left">
+            <h3>Customs and Excise Duty</h3>
+            <p>
+              - Tariff classification and customs valuation<br>
+              - Clearance documentation and EACCMA compliance<br>
+              - Accessing incentives, remissions, rebates, and refunds
+            </p>
+          </div>
+
+          <div class="enquire-right enquire-left"> 
+            <h3>Excise Duty Compliance</h3>
+            <p>
+              - Advice on excisable goods and services<br>
+              - Licensing and excise returns<br>
+              - Managing timing of excise liability
+            </p>
+          </div>
+
+
+      </section>
+
+      <section class="services-preview">
+        <h2 class="services-title">View All Services</h2>
+        <div class="services-box">
+          <p class="services-text">
+            Visit our services page to view all other services we offer.
+          </p>
+          <a href="#services-menu" class="view-button">VIEW →</a>
+        </div>
+      </section>
 </section>
 
     <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
@@ -287,7 +288,12 @@
       <li><a href="sectors.php">Sectors</a></li>
     </ul>
 
-    <h3>Partners</h3>
+      <h3>Socials</h3>
+      <div class="nav-social">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+      </div>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
   </div>
@@ -314,6 +320,70 @@
       servicesLinks.style.display = (servicesLinks.style.display === 'none') ? 'block' : 'none';
     });
   });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select all sections that should be animated
+    const sections = document.querySelectorAll('.audit-section, .offer-section, .enquire-section, .services-preview');
+    
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight * 0.75) && 
+            rect.bottom >= (window.innerHeight * 0.25)
+        );
+    }
+    
+    // Function to handle scroll events
+    function handleScroll() {
+        sections.forEach(section => {
+            if (isInViewport(section)) {
+                section.classList.add('show');
+            } else {
+                // Remove this line if you don't want animations to replay when scrolling up
+                section.classList.remove('show');
+            }
+        });
+    }
+    
+    // Initial check on page load
+    handleScroll();
+    
+    // Add scroll event listener with debounce for performance
+    let isScrolling;
+    window.addEventListener('scroll', function() {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(function() {
+            handleScroll();
+        }, 66); // Runs every 66ms (approximately 15fps)
+    }, false);
+    
+    // Intersection Observer for more performant animations
+    if ('IntersectionObserver' in window) {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    // Remove this line if you don't want animations to replay when scrolling up
+                    entry.target.classList.remove('show');
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    }
+});
 </script>
 
 </body>

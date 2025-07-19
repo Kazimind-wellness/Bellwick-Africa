@@ -55,3 +55,16 @@
         display: none;
     }
 }
+
+/* ==========================================================================
+   Enhanced with Animation Support
+   ========================================================================== */
+/* Animate mobile menu appearance */
+#mainDialog {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+#mainDialog[open] {
+    transform: translateY(0);
+}

@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <header class="adili-header about-header">
   <div class="overlay"></div>
-
+ <div class="nav-background"> 
   <div class="nav-container">
     <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt=" Logo">
@@ -94,8 +94,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </ul>
         </nav>
 
-      <a href="#">Our Offices <span class="arrow">&#9662;</span></a>
-      <a href="#">Media <span class="arrow">&#9662;</span></a>
+      <a href="tax.php#ofices">Our Offices <span class="arrow">&#9662;</span></a>
+      <a href="tax.php">Tax Services<span class="arrow">&#9662;</span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
     
@@ -104,6 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <a href="#" class="menu" id="openMenu"></a>
       </div>
     </nav>
+  </div>
   </div>
 
   <h1 class="page-title">Contacts Us</h1>
@@ -206,7 +207,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <li><a href="sectors.php">Sectors</a></li>
     </ul>
 
-    <h3>Partners</h3>
+        <h3>Socials</h3>
+      <div class="nav-social">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+      </div>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
   </div>

@@ -31,8 +31,8 @@
                 </div>
                 </li>
 
-              <li class="dropdown"><a href="#">Our Offices</a></li>
-              <li class="dropdown"><a href="#">Media</a></li>
+              <li class="dropdown"><a href="tax.php#ofices">Our Offices</a></li>
+              <li class="dropdown"><a href="tax.php">Tax Services</a></li>
               <li><a href="sectors.php">Sectors</a></li>
               <li><a href="contacts.php">Contacts</a></li>
               
@@ -58,11 +58,7 @@
             </div>
         </div>
       <div class="side-nav right-nav">
-        <div class="nav-social">
-            <a href="#">FB</a>
-            <a href="#">TW</a>
-            <a href="#">IG</a>
-      </div>
+
       </div>
 
     <div class="arrow-buttons">
@@ -83,9 +79,7 @@
         </div>
       <div class="side-nav right-nav">
           <div class="nav-social">
-              <a href="#">FB</a>
-              <a href="#">TW</a>
-              <a href="#">IG</a>
+
           </div>
       </div>
       <div class="arrow-buttons">
@@ -106,9 +100,7 @@
         </div>
       <div class="side-nav right-nav">
         <div class="nav-social">
-            <a href="#">FB</a>
-            <a href="#">TW</a>
-            <a href="#">IG</a>
+
       </div>
     </div>
 
@@ -133,72 +125,38 @@
 
 </section>
 
-        <section class="capabilities-section">
+        <section class="capabilities-section fade-in-up">
         <h2>Our <span class="highlight">Capabilities</span></h2>
         <p>
            With over 30 years of combined experience, we have earned a reputation as one of the region’s most progressive firms. Our team, comprised of experts with backgrounds in big-four professional services firms, is dedicated to offering tailored advisory services that foster long-term relationships with our clients.
         </p>
         </section>
 
+        <div class="container fade-in-up">
+          <div class="sidebar">
+            <button class="tab active" data-tab="compliance">Bellwick <span>Africa at a Glance</span> </button>
+            <button class="tab" data-tab="outsourcing"><span>Our</span> Believe</button>
+            <button class="tab" data-tab="risk"><span>Our</span> Advisors</button>
+            <button class="tab" data-tab="cyber">Welcome</button>
+            <button class="tab" data-tab="strategy"><span>Our</span> Services</button>
+          </div>
 
-  <div class="container">
-    <div class="sidebar">
-      <button class="tab active" data-tab="compliance">Bellwick Africa at a Glance</button>
-      <button class="tab" data-tab="outsourcing">Our Believe</button>
-      <button class="tab" data-tab="risk">Our Advisors</button>
-      <button class="tab" data-tab="cyber">Welcome</button>
-      <button class="tab" data-tab="strategy">Our Services</button>
-    </div>
+          <div class="content">
+            <img id="content-image" src="bellwick.jpg" alt="Image" class="content-item" />
+            <div class="text-content content-item">
+              <h2 id="content-title">Bellwick Africa at a Glance</h2>
+              <p id="content-description">
+                Bellwick Africa LLP ("Bellwick") is a leading consultancy firm based in Nairobi, providing accounting, 
+                audit, tax, and business advisory services to businesses and individuals. Established in 2020, we 
+                combine professional expertise, technology, and a deep understanding of our clients' needs to deliver 
+                high-quality, effective, and responsive solutions.
+              </p>
+            </div>
+          </div>
+        </div>
 
-  <div class="content">
-      <img id="content-image" src="bellwick.jpg" alt="Image" />
-      <div class="text-content">
-        <h2 id="content-title">Bellwick Africa at a Glance</h2>
-        <p id="content-description">
-          Bellwick Africa LLP (“Bellwick”) is a leading consultancy firm based in Nairobi, providing accounting, 
-          audit, tax, and business advisory services to businesses and individuals. Established in 2020, we 
-          combine professional expertise, technology, and a deep understanding of our clients' needs to deliver 
-          high-quality, effective, and responsive solutions.
-        </p>
-        <!-- <a id="content-button" href="https://example.com/compliance" target="_blank">
-          <button class="action-button">CORPORATE SOLUTIONS</button>
-        </a> -->
-      </div>
-    </div>
-  </div>
 
-    <section class="mobile">
-      <section class="capabilities-section">
-            <h2>Bellwick Africa at a Glance</span></h2>
-            <p>
-              Bellwick Africa LLP (“Bellwick”) is a leading consultancy firm based in Nairobi, providing accounting, 
-              audit, tax, and business advisory services to businesses and individuals. Established in 2020, we 
-              combine professional expertise, technology, and a deep understanding of our clients' needs to deliver 
-              high-quality, effective, and responsive solutions.
-                    
-            </p>
-              <section class="capabilities-section">
-            <h2>Our Beleive</span></h2>
-            <p>
-            We believe that success comes from collaboration. Our team of reliable, approachable, and proactive professionals is committed to more than just meeting your needs—we work alongside you to help you achieve your goals. Running a business can be challenging but having a trusted advisor to provide guidance and act as a sounding board makes all the difference.
-            </p>
-              <section class="capabilities-section">
-            <h2>Our Advisors</span></h2>
-            <p>
-            Our business improvement advisors offer practical and strategic insights to drive growth, enhance efficiency, and support long-term success.
-            </p>
-            </section>
-              <section class="capabilities-section">
-              <h2>Welcome</span></h2>
-                <p>
-              We welcome the opportunity to connect and build a lasting professional relationship based on a deep understanding of your business.
-                </p>
-              </section>
-        </section>
-      </section>
-  </section>
-
-    <section class="capabilities-section">
+    <section class="capabilities-section fade-in-up">
         <h2>Our <span class="highlight">Team</span></h2>
         <p>
             With our team of professionals, we have proven analytical and problem-solving skills to drive 
@@ -222,6 +180,7 @@
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
   </dialog>
+  <script src="script.js"></script>
 
 
 <section class="testimonial-section">
@@ -291,7 +250,12 @@
       <li><a href="sectors.php">Sectors</a></li>
     </ul>
 
-    <h3>Partners</h3>
+    <h3>Socials</h3>
+      <div class="nav-social">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+      </div>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
   </div>
@@ -309,7 +273,38 @@
   </a>
 </footer>
 
-  <script src="script.js"></script>
   <script src="index.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const servicesToggle = document.getElementById('servicesToggle');
+    const servicesLinks = document.getElementById('servicesLinks');
+
+    servicesToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      servicesLinks.style.display = (servicesLinks.style.display === 'none') ? 'block' : 'none';
+    });
+  });
+</script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in-up");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible"); // Optional: re-animate on scroll back
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+
 </body>
 </html>

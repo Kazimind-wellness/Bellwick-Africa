@@ -1,55 +1,129 @@
-
-.adili-about-section {
-    padding: 80px 20px;
-    background-image: url('https://www.transparenttextures.com/patterns/white-wave.png');
-    /* optional subtle pattern */
-    background-repeat: repeat;
-    background-color: #f9f9f9;
-    text-align: center;
+/* ==========================================================================
+   Base Styles & Variables
+   ========================================================================== */
+:root {
+    --primary-color: #c1440e;
+    --primary-dark: #a0360c;
+    --text-color: #444;
+    --text-light: #555;
+    --text-lighter: #777;
+    --bg-light: #f9f9f9;
+    --bg-lighter: #f5f5f5;
+    --white: #fff;
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --pattern-url: url('https://www.transparenttextures.com/patterns/white-wave.png');
 }
 
+/* ==========================================================================
+   Layout & Sections
+   ========================================================================== */
+.adili-about-section,
+.why-clients,
+.video-section {
+    padding: clamp(40px, 5vw, 80px) 20px;
+    text-align: center;
+    background-color: var(--bg-light);
+    background-image: var(--pattern-url);
+    background-repeat: repeat;
+}
+
+.adili-about-section {
+    animation: wave 60s linear infinite;
+}
+
+.why-clients {
+    animation: wave 60s linear infinite reverse;
+}
+
+.container,
 .container-about {
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h2,
+.section-title {
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: var(--text-color);
 }
 
 h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    line-height: 1.5;
+    font-size: clamp(24px, 3vw, 28px);
+}
+
+.section-title {
+    font-size: clamp(28px, 3.5vw, 32px);
+    color: var(--primary-color);
+}
+
+.reason h3 {
+    font-size: clamp(18px, 2vw, 20px);
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    transition: var(--transition);
+}
+
+.experience-text,
+.reason p {
+    font-size: clamp(15px, 2vw, 16px);
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-text {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.reason p {
+    color: var(--text-color);
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: clamp(30px, 4vw, 60px);
+    text-align: left;
+}
+
+.reason {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    will-change: transform;
 }
 
 .key-offerings {
     list-style-type: disc;
     text-align: left;
     padding-left: 40px;
-    font-size: 16px;
+    font-size: clamp(15px, 2vw, 16px);
     margin-bottom: 30px;
-    color: #444;
+    color: var(--text-color);
 }
 
 .key-offerings li {
     margin-bottom: 10px;
 }
 
-.experience-text {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
-
-
-/* The video div */
-
-.video-section {
-    text-align: center;
-    background-image: url('https://www.transparenttextures.com/patterns/white-wave.png');
-    padding: 40px 20px;
-    background-color: #fdfdfd;
-}
-
+/* Video Section */
 .video-container {
     max-width: 800px;
     margin: 0 auto;
@@ -57,7 +131,7 @@ h2 {
     aspect-ratio: 16 / 9;
     overflow: hidden;
     border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
 }
 
 .video-container iframe {
@@ -67,60 +141,225 @@ h2 {
 }
 
 .video-caption {
-    font-size: 18px;
-    color: #555;
+    font-size: clamp(16px, 2vw, 18px);
+    color: var(--text-light);
     margin-top: 20px;
     font-style: italic;
 }
 
-/* Why Clients Section */
-
-
-.why-clients {
-    padding: 60px 20px;
-    background-image: url('https://www.transparenttextures.com/patterns/white-wave.png');
+/* Testimonial */
+.testimonial-section {
+    padding: clamp(40px, 5vw, 60px) 20px;
+    background-color: var(--bg-lighter);
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
+.testimonial {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.section-title {
-    font-size: 32px;
+
+.author {
+    font-size: clamp(14px, 2vw, 16px);
+    color: var(--text-lighter);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: clamp(40px, 5vw, 60px) 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: var(--white);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    text-decoration: none;
     font-weight: bold;
-    color: #c1440e;
-    margin-bottom: 50px;
+    border-radius: 4px;
+    transition: var(--transition);
+    will-change: transform;
 }
 
-.reasons-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px 60px;
-    text-align: left;
+/* ==========================================================================
+   Interactive States
+   ========================================================================== */
+.reason:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
 
-.reason h3 {
-    font-size: 20px;
-    color: #c1440e;
-    margin-bottom: 10px;
+.reason:hover h3 {
+    color: var(--primary-dark);
+    animation: pulse 1.5s infinite;
 }
 
-.reason p {
-    font-size: 16px;
-    color: #444;
-    line-height: 1.6;
+.cta-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
 }
 
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* Scroll Animation Classes */
+.scroll-animate {
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: opacity, transform;
+}
+
+.fade-in-up {
+    transform: translateY(20px);
+}
+
+.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+@me  (max-width: 900px) {
+    .nav-links a {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .reasons-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .key-offerings {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reason {
+        padding: 20px;
+    }
+
+    .key-offerings {
+        padding-left: 20px;
+    }
+}
+
+/* Ensure smooth transitions */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: opacity, transform;
+}
+
+.scroll-animate.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* For elements that should only animate once */
+.scroll-animate.once {
+    transition: none;
+}
+
+/* ==========================================================================
+   Navigation Responsivity (Your Original Styles Enhanced)
+   ========================================================================== */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Your original mobile breakpoints */
 @media screen and (max-width: 1000px) {
-    .nav-links{
+    .nav-links {
         font-size: 12px;
     }
 }
 
 @media screen and (max-width: 900px) {
-  .nav-links a{
-    display: none;
-  }
+    .nav-links a {
+        display: none;
+    }
+
+    /* Show mobile menu button */
+    .right-side .menu {
+        display: block;
+    }
+    .page-title{
+        font-size: 45px;
+    }
 }
+
+/* ==========================================================================
+   Enhanced with Animation Support
+   ========================================================================== */
+/* Animate mobile menu appearance */
+#mainDialog {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+#mainDialog[open] {
+    transform: translateY(0);
+}
+

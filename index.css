@@ -1,7 +1,7 @@
 .capabilities-section {
     width: 100%;
     margin: 3rem 0;
-    padding: 0 1.5rem;
+    padding: 0 4rem;
     font-family: 'Georgia', serif;
     color: #222;
 }
@@ -23,80 +23,212 @@
 
 
 /* The Changing content in INDEX.PHP */
+/* Base styles */
+:root {
+    --primary-color: #004766;
+    --primary-hover: #00688b;
+    --accent-color: #b23b0f;
+    --text-color: #444;
+    --light-bg: #f8f9fa;
+}
+
+/* The Changing content in INDEX.PHP */
 .container {
     display: flex;
     margin: 4rem auto;
-    width: 100%;
-    height: 50vh;
+    width: 85%;
+    max-width: 1200px;
+    height: 300px;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.container.in-view {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .sidebar {
-    background-color: #004766;
+    background-color: var(--primary-color);
     color: white;
     width: 250px;
     display: flex;
     flex-direction: column;
+    padding: 10px 0;
 }
 
 .sidebar .tab {
     background: none;
     border: none;
     color: white;
-    padding: 15px 20px;
+    padding: 18px 20px;
     text-align: left;
     cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
+    font-size: 17px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.sidebar .tab:hover,
+.sidebar .tab:hover {
+    background-color: var(--primary-hover);
+    transform: translateX(1px);
+    color: var(--accent-color);
+}
+
 .sidebar .tab.active {
-    background-color: #00688b;
+    background-color: var(--primary-hover);
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.sidebar .tab.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--accent-color);
 }
 
 .content {
     flex: 1;
-    padding: 20px;
+    padding: 30px;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    background-color: var(--light-bg);
+}
+
+.content-item {
+    opacity: 0;
+    transform: translateX(-45px);
+    transition: all 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.content-item.active {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .content img {
     width: 300px;
-    height: auto;
+    height: 100%;
+    max-height: 400px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .text-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-
 .text-content h2 {
-    color: #b23b0f;
+    color: var(--accent-color);
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .text-content p {
-    font-size: 20px;
-    color: #444;
+    font-size: 17px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .action-button {
     margin-top: 15px;
-    background-color: #004766;
+    background-color: var(--primary-color);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    font-size: 14px;
+    border-radius: 4px;
+    font-size: 15px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
 }
 
 .action-button:hover {
-    background-color: #00688b;
+    background-color: var(--primary-hover);
+    transform: translateY(-0.2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation delays for content items */
+.content-item:nth-child(1).active {
+    transition-delay: 0.2s;
+}
+
+.content-item:nth-child(2).active {
+    transition-delay: 0.3s;
+}
+
+/* Animation base styles */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2s ease-out;
+}
+
+/* When element is in view */
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 0;
+    }
+
+    .sidebar .tab {
+        padding: 15px;
+        white-space: nowrap;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content img {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .sidebar span{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .sidebar .tab{
+        font-size: 10px;
+    }
+
 }
 
 .arrow-buttons {
@@ -136,11 +268,11 @@
 
 @media screen and (max-width: 768px) {
      .mobile{
-        display: inline;
+        /* display: inline; */
      }
 
     .container{
-        display: none;
+        /* display: none; */
      }
 
     .capabilities-section p{
@@ -151,5 +283,40 @@
         height: 60vh;
     }
 
+    
+
 }
 
+/* ==========================================================================
+   Enhanced with Animation Support
+   ========================================================================== */
+/* Animate mobile menu appearance */
+#mainDialog {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+#mainDialog[open] {
+    transform: translateY(0);
+}
+
+/* Animate nav links on desktop */
+.nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}

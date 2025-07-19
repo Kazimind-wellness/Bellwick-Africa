@@ -12,7 +12,7 @@
 
 <header class="adili-header services-header">
   <div class="overlay"></div>
-
+ <div class="nav-background"> 
   <div class="nav-container">
     <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt=" Logo">
@@ -36,14 +36,15 @@
         </ul>
         </nav>
 
-      <a href="#">Our Offices <span class="arrow"></span></a>
-      <a href="#">Media <span class="arrow"></span></a>
+      <a href="tax.php#ofices">Our Offices <span class="arrow"></span></a>
+      <a href="tax.php">Tax Services<span class="arrow"></span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
 
     </nav>
-          <div class="right-side">
+      <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
+      </div>
       </div>
 
   </div>
@@ -51,6 +52,7 @@
   <h1 class="page-title">Business Advisory</h1>
 </header>
 
+<section class="wholeContent">
 
  <section class="audit-section">
     <div class="container">
@@ -62,7 +64,7 @@
         <a href="contacts.php" class="enquire-button">ENQUIRE</a>
       </div>
       <div class="audit-image">
-        <img src="https://media.istockphoto.com/id/1352173615/photo/nairobi-skyline.jpg?s=2048x2048&w=is&k=20&c=Qhi7Xhm8R9EizCft5nwvEhaxd6lgelLXe6Rnn5Y7lbw=" alt="Internal Audit Graphic">
+        <img src="beautifulCity.jpg" alt="Internal Audit Graphic">
       </div>
     </div>
   </section>
@@ -156,7 +158,7 @@
       <a href="#services-menu" class="view-button">VIEW →</a>
     </div>
   </section>
-
+</section>
 
     <dialog id="mainDialog" style="text-align: center; margin: 5rem auto;">
       <a href="index.php">HOME</a>
@@ -242,7 +244,12 @@
       <li><a href="sectors.php">Sectors</a></li>
     </ul>
 
-    <h3>Partners</h3>
+      <h3>Socials</h3>
+      <div class="nav-social">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+      </div>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
   </div>
@@ -269,6 +276,70 @@
       servicesLinks.style.display = (servicesLinks.style.display === 'none') ? 'block' : 'none';
     });
   });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select all sections that should be animated
+    const sections = document.querySelectorAll('.audit-section, .offer-section, .enquire-section, .services-preview');
+    
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight * 0.75) && 
+            rect.bottom >= (window.innerHeight * 0.25)
+        );
+    }
+    
+    // Function to handle scroll events
+    function handleScroll() {
+        sections.forEach(section => {
+            if (isInViewport(section)) {
+                section.classList.add('show');
+            } else {
+                // Remove this line if you don't want animations to replay when scrolling up
+                section.classList.remove('show');
+            }
+        });
+    }
+    
+    // Initial check on page load
+    handleScroll();
+    
+    // Add scroll event listener with debounce for performance
+    let isScrolling;
+    window.addEventListener('scroll', function() {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(function() {
+            handleScroll();
+        }, 66); // Runs every 66ms (approximately 15fps)
+    }, false);
+    
+    // Intersection Observer for more performant animations
+    if ('IntersectionObserver' in window) {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    // Remove this line if you don't want animations to replay when scrolling up
+                    entry.target.classList.remove('show');
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    }
+});
 </script>
 
 </body>

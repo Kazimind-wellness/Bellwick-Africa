@@ -1,5 +1,9 @@
+/* ===== Base Styles ===== */
 .why-work {
-  padding: 60px 20px;
+  padding: 80px 5%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fdfdfd;
 }
 
 .why-work-container {
@@ -7,43 +11,272 @@
   flex-wrap: wrap;
   gap: 40px;
   max-width: 1200px;
+  flex-direction: row-reverse;
   margin: 0 auto;
   align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  padding: 0 20px;
 }
 
+.why-work-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Text Content ===== */
 .why-work-text {
   flex: 1 1 55%;
+  min-width: 300px;
+  padding: 20px;
 }
 
 .why-work-text h2 {
-  font-size: 40px;
+  font-size: 36px;
   color: #c1440e;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.why-work-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #c1440e;
+  transition: width 0.5s ease;
+}
+
+.why-work-container:hover .why-work-text h2::after {
+  width: 100%;
 }
 
 .why-work-text p {
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 16px;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
   color: #444;
+  transition: all 0.3s ease;
+  padding-right: 10px;
 }
 
-.why-work-text em {
-  font-style: italic;
+.why-work-text p:hover {
+  transform: translateX(5px);
   color: #333;
 }
 
+.why-work-text strong {
+  color: #c1440e;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.why-work-text strong:hover {
+  color: #a2380c;
+}
+
+.why-work-text ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.why-work-text li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.why-work-text li:hover {
+  color: #c1440e;
+  transform: translateX(5px);
+}
+
+.why-work-text li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #c1440e;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.why-work-text li:hover::before {
+  transform: translateX(3px);
+}
+
+/* ===== Image Styles ===== */
 .why-work-image {
   flex: 1 1 40%;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  aspect-ratio: 16/9;
+}
+
+.why-work-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .why-work-image img {
   width: 100%;
   height: 100%;
   display: block;
-  border-radius: 4px;
+  border-radius: 8px;
+  transition: all 0.8s ease;
+  object-fit: cover;
+  object-position: center;
 }
 
+.why-work-image:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== Alternate Layout ===== */
+.why-work:nth-child(even) .why-work-container {
+  flex-direction: row-reverse;
+}
+
+/* ===== Background Effect ===== */
+.why-work::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(193, 68, 14, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.why-work.visible::before {
+  opacity: 1;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media screen and (max-width: 1000px) {
+  .why-work {
+    padding: 70px 5%;
+  }
+
+  .why-work-text h2 {
+    font-size: 32px;
+  }
+
+  .why-work-text p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 948px){
+        .why-work-image {
+            display: none;
+          }
+}
+
+@media screen and (max-width: 768px) {
+  .why-work {
+    padding: 60px 5%;
+  }
+
+  .why-work-container {
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 30px;
+  }
+
+
+  .why-work-text{
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .why-work-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .why-work-text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+  }
+
+  .why-work-container:hover .why-work-text h2::after {
+    width: 100px;
+  }
+
+  .why-work-text p:hover {
+    transform: none;
+  }
+
+  .why-work-image {
+    aspect-ratio: 16/9;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why-work {
+    padding: 50px 15px;
+  }
+
+  .why-work-text h2 {
+    font-size: 26px;
+  }
+
+  .why-work-text {
+    padding: 0;
+  }
+}
+
+/* Animate mobile menu appearance */
+#mainDialog {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+#mainDialog[open] {
+  transform: translateY(0);
+}
+
+/* ===== Animation Support ===== */
+@keyframes underlineGrow {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: none) {
+
+  .why-work-text p:hover,
+  .why-work-text li:hover,
+  .why-work-image:hover,
+  .why-work-image:hover img {
+    transform: none !important;
+  }
+}
+
+/* ===== Original Styles Preserved ===== */
 @media screen and (max-width: 1000px) {
   .nav-links {
     font-size: 12px;
@@ -54,14 +287,4 @@
   .nav-links a {
     display: none;
   }
-
-  .why-work-image{
-    display: none;
-  }
-
-  header .page-title{
-    font-size: 2.5rem;
-  }
-
-
 }

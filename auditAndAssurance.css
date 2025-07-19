@@ -1,6 +1,217 @@
+/* ===== Base Transition ===== */
+.audit-section,
+.offer-section,
+.enquire-section,
+.services-preview,
+.container>div,
+.offer-container>div,
+.enquire-container>div,
+.audit-image,
+.audit-text,
+.offer-left,
+.offer-right,
+.enquire-left,
+.enquire-right,
+.services-box {
+    transition: all 0.3s ease-out;
+}
+
+.wholeContent{
+    padding: 0 2rem;
+}
+
+/* ===== Image Zoom Effect ===== */
+.audit-image img {
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.audit-image:hover img {
+    transform: scale(0.95);
+    /* Zoom out effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== #c1440e Color Underline Effects ===== */
+.audit-text h2,
+.offer-title,
+.services-title,
+.enquire-left h3,
+.enquire-right h3,
+.contact-highlight {
+    position: relative;
+}
+
+.audit-text h2:hover::after,
+.offer-title:hover::after,
+.services-title:hover::after,
+.enquire-left h3:hover::after,
+.enquire-right h3:hover::after,
+.contact-highlight:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #c1440e;
+    animation: underlineGrow 0.3s ease-out forwards;
+}
+
+@keyframes underlineGrow {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* ===== Enquire Section Hovers ===== */
+.enquire-left:hover {
+    transform: translateX(5px);
+    border-left: 3px solid #c1440e;
+    padding-left: 10px;
+}
+
+.enquire-right:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 59, 92, 0.1);
+    background-color: #f0f0f0;
+}
+
+.enquire-right:hover h3 {
+    color: #c1440e;
+}
+
+/* ===== Button Hovers ===== */
+.enquire-button:hover {
+    background-color: #00688b;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 71, 102, 0.3);
+}
+
+.view-button:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(193, 68, 14, 0.1);
+    color: #c1440e;
+}
+
+/* ===== List Item Hovers ===== */
+.offer-list li:hover {
+    color: #c1440e;
+    transform: translateX(5px);
+}
+
+.offer-list li:hover::marker {
+    color: #c1440e;
+}
+
+/* ===== Card Hovers ===== */
+.offer-right:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 71, 102, 0.2);
+}
+
+/* ===== Services Box Hover ===== */
+.services-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Existing CSS with animation additions */
+.audit-section,
+.offer-section,
+.enquire-section,
+.services-preview {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Section animations when coming into view */
+.audit-section.show,
+.offer-section.show,
+.enquire-section.show,
+.services-preview.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Initial positions for animations */
+.audit-section {
+    transform: translateY(30px);
+}
+
+.offer-section {
+    transform: translateY(40px);
+}
+
+.enquire-section {
+    transform: translateY(50px);
+}
+
+.services-preview {
+    transform: translateY(60px);
+}
+
+/* Text element animations */
+.audit-text h2,
+.offer-title,
+.enquire-left h2,
+.services-title {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;
+}
+
+.audit-text p,
+.offer-list,
+.enquire-left p,
+.services-text {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease 0.4s, transform 0.5s ease 0.4s;
+}
+
+.enquire-button,
+.view-button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease 0.6s, transform 0.5s ease 0.6s, background-color 0.3s ease;
+}
+
+.audit-image {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s;
+}
+
+.offer-right {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease 0.5s, transform 0.6s ease 0.5s;
+}
+
+/* Show animations when elements are in view */
+.show .audit-text h2,
+.show .offer-title,
+.show .enquire-left h2,
+.show .services-title,
+.show .audit-text p,
+.show .offer-list,
+.show .enquire-left p,
+.show .services-text,
+.show .enquire-button,
+.show .view-button,
+.show .audit-image,
+.show .offer-right {
+    opacity: 1;
+    transform: translate(0);
+}
 
 .audit-section {
-    padding: 60px 20px;
+    padding: 80px 40px;
     background-color: #fdfdfd;
 }
 
@@ -11,6 +222,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 40px;
+    padding: 0 20px;
 }
 
 .audit-text {
@@ -60,9 +272,8 @@
     object-fit: cover;
 }
 
-
 .offer-section {
-    padding: 60px 20px;
+    padding: 80px 40px;
     background-color: #fdfdfd;
 }
 
@@ -73,6 +284,7 @@
     gap: 60px;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 .offer-left {
@@ -119,7 +331,7 @@
 }
 
 .services-preview {
-    padding: 40px 20px;
+    padding: 60px 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -163,7 +375,7 @@
 }
 
 .enquire-section {
-    padding: 60px 20px;
+    padding: 80px 40px;
 }
 
 .enquire-container {
@@ -172,6 +384,7 @@
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .enquire-left {
@@ -250,4 +463,44 @@
     .nav-links a {
         display: none;
     }
+
+    .audit-section,
+    .offer-section,
+    .enquire-section {
+        padding: 60px 30px;
+    }
+
+    .container,
+    .offer-container,
+    .enquire-container {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .audit-section,
+    .offer-section,
+    .enquire-section {
+        padding: 50px 20px;
+    }
+
+    .container,
+    .offer-container,
+    .enquire-container {
+        padding: 0 10px;
+    }
+}
+
+/* ==========================================================================
+   Enhanced with Animation Support
+   ========================================================================== */
+/* Animate mobile menu appearance */
+#mainDialog {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+#mainDialog[open] {
+    transform: translateY(0);
 }

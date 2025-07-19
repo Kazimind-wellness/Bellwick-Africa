@@ -17,7 +17,32 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 60px;
+    padding: 0 60px 30px 60px; 
+}
+
+.nav-background {
+    position: relative;
+    /* or absolute/fixed depending on your layout needs */
+    width: 100vw;
+    height: 6rem;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    padding-top: 16px;
+    /* Ensure it's above other elements but below dropdowns if needed */
+}
+
+/* Ensure the nav-container maintains its current styling */
+.nav-container {
+    position: relative;
+    max-width: 1200px;
+    /* or whatever your current max-width is */
+    margin: 0 auto;
+    padding: 0 15px;
+    /* adjust as needed */
 }
 
 .about-header{
@@ -323,6 +348,7 @@ html {
 /* Hover BOx */
 .navbar {
     padding: 1rem;
+    z-index: 200000;
 }
 
 .nav-links {
@@ -359,7 +385,7 @@ html {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     min-width: 180px;
     border-radius: 6px;
-    z-index: 999;
+    z-index: 1200;
 }
 
 .dropdown-content a {

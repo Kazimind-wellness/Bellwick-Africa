@@ -12,8 +12,7 @@
 
 <header class="adili-header about-header">
   <div class="overlay"></div>
-
-
+    <div class="nav-background"> 
   <div class="nav-container">
     <!-- <div class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt=" Logo">
@@ -27,18 +26,18 @@
         <ul class="nav-links">
             <li class="dropdown">
             <a href="#">Our Services <span class="arrow">&#9662;</span></a>
-            <div class="dropdown-content">
+            <div class="dropdown-content" >
                 <a href="auditAndAssurance.php">Audit & Assurance</a>
                 <a href="BusinessSupportSolutions.php">Business support solutions</a>
                 <a href="BusinessAdvisory.php">Business Advisory</a>
-                <a href="tax.php">Tax</a>
+                <a href="tax.php"> Tax </a>
             </div>
             </li>
         </ul>
         </nav>
 
-      <a href="#">Our Offices <span class="arrow">&#9662;</span></a>
-      <a href="#">Media <span class="arrow">&#9662;</span></a>
+      <a href="tax.php#ofices">Our Offices<span class="arrow">&#9662;</span></a>
+      <a href="tax.php">Tax Services<span class="arrow">&#9662;</span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
     </nav>
@@ -46,9 +45,10 @@
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
+      </div>
   </div>
 
-  <h1 class="page-title">For over 20 years we have served clients in the following sectors</h1>
+  <h1 class="page-title" style="font-size: 38px;">For over 20 years we have served clients in the following sectors</h1>
 </header>
 
 
@@ -142,8 +142,6 @@
       </div>
     </div>
   </section>
-
-
   <section class="why-work">
     <div class="why-work-container">
       <div class="why-work-image">
@@ -337,7 +335,12 @@
       <li><a href="sectors.php">Sectors</a></li>
     </ul>
 
-    <h3>Partners</h3>
+      <h3>Socials</h3>
+      <div class="nav-social">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+      </div>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
   </div>
@@ -367,6 +370,55 @@
     });
   });
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for scroll animations
+    const targets = document.querySelectorAll('.why-work, .why-work-container');
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // Allow re-trigger on scroll out
+        }
+      });
+    }, observerOptions);
+
+    targets.forEach(target => {
+      observer.observe(target);
+    });
+
+    // Smooth hover effects for touch devices
+    function setupTouchHover() {
+      if ('ontouchstart' in window) {
+        document.querySelectorAll('.why-work-image, .why-work-text p').forEach(element => {
+          element.addEventListener('click', function() {
+            this.classList.toggle('hover-state');
+          });
+        });
+      }
+    }
+
+    setupTouchHover();
+
+    // Desktop hover state class
+    document.querySelectorAll('.why-work-image, .why-work-text p').forEach(element => {
+      element.addEventListener('mouseenter', function() {
+        this.classList.add('hover-state');
+      });
+      element.addEventListener('mouseleave', function() {
+        this.classList.remove('hover-state');
+      });
+    });
+  });
+</script>
+
 
 </body>
 </html>
