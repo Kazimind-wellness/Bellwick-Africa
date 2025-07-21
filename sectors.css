@@ -34,7 +34,7 @@
 
 .why-work-text h2 {
   font-size: 36px;
-  color: #c1440e;
+  color: #009CDE;
   margin-bottom: 25px;
   position: relative;
   display: inline-block;
@@ -49,7 +49,7 @@
   left: 0;
   width: 0;
   height: 3px;
-  background-color: #c1440e;
+  background-color: #009CDE;
   transition: width 0.5s ease;
 }
 
@@ -72,13 +72,13 @@
 }
 
 .why-work-text strong {
-  color: #c1440e;
+  color: #009CDE;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .why-work-text strong:hover {
-  color: #a2380c;
+  color: #009CDE;
 }
 
 .why-work-text ul {
@@ -97,7 +97,7 @@
 }
 
 .why-work-text li:hover {
-  color: #c1440e;
+  color: #009CDE;
   transform: translateX(5px);
 }
 
@@ -105,7 +105,7 @@
   content: '→';
   position: absolute;
   left: 0;
-  color: #c1440e;
+  color: #009CDE;
   font-weight: bold;
   transition: all 0.3s ease;
 }

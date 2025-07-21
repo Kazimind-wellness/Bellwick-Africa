@@ -12,10 +12,11 @@
 
   <!-- Floating Navigation -->
   <header class="floating-nav">
-      <!-- <div class="left-side">
-          <a href="#" class="logo">LOGO</a>
-      </div> -->
-      <a href="contacts.php" class="enquire-btn" >ENQUIRE</a>
+    <div class="left-side">
+    <div class="logo">
+      <img src="logo.png" alt=" Logo">
+    </div>
+      </div>
       <nav class="main-nav">
           <ul>
               <li><a href="index.php">Home</a></li>
@@ -30,7 +31,6 @@
                 <a href="tax.php">Tax</a>
                 </div>
                 </li>
-
               <li class="dropdown"><a href="tax.php#ofices">Our Offices</a></li>
               <li class="dropdown"><a href="tax.php">Tax Services</a></li>
               <li><a href="sectors.php">Sectors</a></li>
@@ -38,7 +38,7 @@
               
           </ul>
       </nav>
- 
+       <a href="contacts.php" class="enquire-btn" >ENQUIRE</a>
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
@@ -135,7 +135,7 @@
         <div class="container fade-in-up">
           <div class="sidebar">
             <button class="tab active" data-tab="compliance">Bellwick <span>Africa at a Glance</span> </button>
-            <button class="tab" data-tab="outsourcing"><span>Our</span> Believe</button>
+            <button class="tab" data-tab="outsourcing"><span>Our</span> Belief</button>
             <button class="tab" data-tab="risk"><span>Our</span> Advisors</button>
             <button class="tab" data-tab="cyber">Welcome</button>
             <button class="tab" data-tab="strategy"><span>Our</span> Services</button>
@@ -144,9 +144,9 @@
           <div class="content">
             <img id="content-image" src="bellwick.jpg" alt="Image" class="content-item" />
             <div class="text-content content-item">
-              <h2 id="content-title">Bellwick Africa at a Glance</h2>
+              <h2 id="content-title">Bellwick at a Glance</h2>
               <p id="content-description">
-                Bellwick Africa LLP ("Bellwick") is a leading consultancy firm based in Nairobi, providing accounting, 
+                Bellwick LLP ("Bellwick") is a leading consultancy firm based in Nairobi, providing accounting, 
                 audit, tax, and business advisory services to businesses and individuals. Established in 2020, we 
                 combine professional expertise, technology, and a deep understanding of our clients' needs to deliver 
                 high-quality, effective, and responsive solutions.
@@ -244,7 +244,7 @@
   </div>
 
   <div class="services-column side-info">
-    <h3>About Bellwick Africa</h3>
+    <h3>About Bellwick</h3>
     <ul>
       <li><a href="contacts.php">Contact</a></li>
       <li><a href="sectors.php">Sectors</a></li>
@@ -264,7 +264,7 @@
 
 <footer class="bottom-footer">
   <div class="footer-content">
-    <p>© 2025 Bellwick Africa All rights reserved</p>
+    <p>© 2025 Bellwick All rights reserved</p>
     <p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
   </div>
 

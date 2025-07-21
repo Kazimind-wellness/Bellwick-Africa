@@ -74,33 +74,22 @@ html {
     position: relative;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.logo img {
-    height: 50px;
-    width: auto;
-}
-
 .nav-links {
+    flex: 1;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 25px;
-    font-size: 1rem;
-    z-index: 2;
+    max-width: 60%;
+    height: 2rem;
+    white-space: nowrap;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
     position: relative;
-    padding: 5px 8px;
+    padding: 0;
+    display:inline;
     transition: color 0.3s ease;
 }
 
@@ -108,13 +97,15 @@ html {
     color: #ffcc99;
 }
 
+
+
 .arrow {
     font-size: 0.7em;
     margin-left: 3px;
 }
 
 .enquire-btn {
-    background-color: #d14e1c;
+    background-color: #009CDE;
     padding: 8px 16px;
     border-radius: 2px;
     font-weight: bold;
@@ -164,7 +155,7 @@ html {
 
 
 .cta-section {
-    background-color: #ce4320;
+    background-color: #009CDE;
     /* the reddish-orange background */
     color: white;
     text-align: center;
@@ -184,7 +175,7 @@ html {
     display: inline-block;
     padding: 18px 40px;
     background-color: #fff;
-    color: #ce4320;
+    color: #009CDE;
     text-decoration: none;
     font-weight: 500;
     border-radius: 2px;
@@ -195,7 +186,7 @@ html {
 }
 
 .cta-button:hover {
-    background-color: #ce4320;
+    background-color: #009CDE;
     color: #fff;
     border: 1px solid #fff;
 }
@@ -222,7 +213,6 @@ html {
 }
 
 .logo {
-    width: 100px;
     margin-bottom: 10px;
 }
 
@@ -295,13 +285,13 @@ html {
 .bottom-footer {
     background-color: #004965;
     /* dark blue like in the image */
-    color: #f85a40;
+    color: #009CDE;
     /* orange-ish text */
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 3px solid #f85a40;
+    border-top: 3px solid #009CDE;
     position: relative;
     font-family: 'Nunito', sans-serif;
 }
@@ -319,7 +309,7 @@ html {
 }
 
 .footer-content a {
-    color: #f85a40;
+    color: #009CDE;
     text-decoration: none;
 }
 
@@ -347,7 +337,8 @@ html {
 
 /* Hover BOx */
 .navbar {
-    padding: 1rem;
+    padding: 0 0 0 2rem;
+    width: 10rem;
     z-index: 200000;
 }
 

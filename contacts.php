@@ -71,40 +71,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <div class="overlay"></div>
  <div class="nav-background"> 
   <div class="nav-container">
-    <!-- <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt=" Logo">
-      
-    </div> -->
-      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
+    <div class="logo">
+      <img src="logo.png" alt=" Logo">
+    </div>
+
     <nav class="nav-links">
       <a href="index.php">Home</a>
-      <a href="aboutUs.php">About Us<span class="arrow">&#9662;</span></a>
+      <a href="aboutUs.php">About Us<span class="arrow"></span></a>
 
-         <nav class="navbar">
+        <nav class="navbar" >
         <ul class="nav-links">
             <li class="dropdown">
             <a href="#">Our Services <span class="arrow">&#9662;</span></a>
-            <div class="dropdown-content">
+            <div class="dropdown-content" >
                 <a href="auditAndAssurance.php">Audit & Assurance</a>
                 <a href="BusinessSupportSolutions.php">Business support solutions</a>
                 <a href="BusinessAdvisory.php">Business Advisory</a>
-                <a href="tax.php">Tax</a>
+                <a href="tax.php"> Tax </a>
             </div>
             </li>
         </ul>
         </nav>
 
-      <a href="tax.php#ofices">Our Offices <span class="arrow">&#9662;</span></a>
-      <a href="tax.php">Tax Services<span class="arrow">&#9662;</span></a>
+      <a href="tax.php#ofices">Our Offices<span class="arrow">&#9662;</span></a>
+      <a href="tax.php">Tax Services<span class="arrow"></span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
-    
     </nav>
+    <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
-    </nav>
-  </div>
+    </div>
   </div>
 
   <h1 class="page-title">Contacts Us</h1>
@@ -201,7 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </div>
 
   <div class="services-column side-info">
-    <h3>About Bellwick Africa</h3>
+    <h3>About Bellwick</h3>
     <ul>
       <li><a href="contacts.php">Contact</a></li>
       <li><a href="sectors.php">Sectors</a></li>

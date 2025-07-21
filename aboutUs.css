@@ -2,8 +2,8 @@
    Base Styles & Variables
    ========================================================================== */
 :root {
-    --primary-color: #c1440e;
-    --primary-dark: #a0360c;
+    --primary-color: #009CDE;
+    --primary-dark: #009CDE;
     --text-color: #444;
     --text-light: #555;
     --text-lighter: #777;
@@ -275,7 +275,7 @@ h2 {
 /* ==========================================================================
    Responsive Adjustments
    ========================================================================== */
-@me  (max-width: 900px) {
+@media  (max-width: 900px) {
     .nav-links a {
         display: none;
     }
@@ -323,24 +323,14 @@ h2 {
 /* ==========================================================================
    Navigation Responsivity (Your Original Styles Enhanced)
    ========================================================================== */
-.nav-links {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
+
 
 /* Your original mobile breakpoints */
 @media screen and (max-width: 1000px) {
-    .nav-links {
-        font-size: 12px;
-    }
+
 }
 
 @media screen and (max-width: 900px) {
-    .nav-links a {
-        display: none;
-    }
-
     /* Show mobile menu button */
     .right-side .menu {
         display: block;

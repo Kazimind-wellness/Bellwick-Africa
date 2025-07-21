@@ -31,7 +31,7 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== #c1440e Color Underline Effects ===== */
+/* ===== #009CDE Color Underline Effects ===== */
 .audit-text h2,
 .offer-title,
 .services-title,
@@ -53,7 +53,7 @@
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background-color: #c1440e;
+    background-color: #009CDE;
     animation: underlineGrow 0.3s ease-out forwards;
 }
 
@@ -70,7 +70,7 @@
 /* ===== Enquire Section Hovers ===== */
 .enquire-left:hover {
     transform: translateX(5px);
-    border-left: 3px solid #c1440e;
+    border-left: 3px solid #009CDE;
     padding-left: 10px;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .enquire-right:hover h3 {
-    color: #c1440e;
+    color: #009CDE;
 }
 
 /* ===== Button Hovers ===== */
@@ -95,17 +95,17 @@
     background-color: #f1f1f1;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(193, 68, 14, 0.1);
-    color: #c1440e;
+    color: #009CDE;
 }
 
 /* ===== List Item Hovers ===== */
 .offer-list li:hover {
-    color: #c1440e;
+    color: #009CDE;
     transform: translateX(5px);
 }
 
 .offer-list li:hover::marker {
-    color: #c1440e;
+    color: #009CDE;
 }
 
 /* ===== Card Hovers ===== */
@@ -231,7 +231,7 @@
 
 .audit-text h2 {
     font-size: 36px;
-    color: #c1440e;
+    color: #009CDE;
     margin-bottom: 20px;
     line-height: 1.3;
 }
@@ -293,7 +293,7 @@
 
 .offer-title {
     font-size: 36px;
-    color: #c1440e;
+    color: #009CDE;
     margin-bottom: 10px;
 }
 
@@ -338,7 +338,7 @@
 
 .services-title {
     font-size: 32px;
-    color: #c1440e;
+    color: #009CDE;
     margin-bottom: 20px;
 }
 
@@ -361,7 +361,7 @@
 .view-button {
     display: inline-block;
     background-color: #ffffff;
-    color: #c1440e;
+    color: #009CDE;
     font-weight: bold;
     padding: 12px 20px;
     text-decoration: none;
@@ -398,7 +398,7 @@
 }
 
 .enquire-left h3 {
-    color: #c1440e;
+    color: #009CDE;
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -437,7 +437,7 @@
 }
 
 .office-details h3 {
-    color: #c1440e;
+    color: #009CDE;
     margin-bottom: 10px;
     font-size: 24px;
 }
@@ -449,7 +449,7 @@
 }
 
 .contact-highlight {
-    color: #c1440e;
+    color: #009CDE;
     text-decoration: none;
 }
 

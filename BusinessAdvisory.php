@@ -12,36 +12,36 @@
 
 <header class="adili-header services-header">
   <div class="overlay"></div>
- <div class="nav-background"> 
+<div class="nav-background"> 
   <div class="nav-container">
-    <!-- <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt=" Logo">
-    </div> -->
-      <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
+    <div class="logo">
+      <img src="logo.png" alt=" Logo">
+    </div>
+
     <nav class="nav-links">
       <a href="index.php">Home</a>
       <a href="aboutUs.php">About Us<span class="arrow"></span></a>
 
-        <nav class="navbar">
+        <nav class="navbar" >
         <ul class="nav-links">
             <li class="dropdown">
             <a href="#">Our Services <span class="arrow">&#9662;</span></a>
-            <div class="dropdown-content">
+            <div class="dropdown-content" >
                 <a href="auditAndAssurance.php">Audit & Assurance</a>
                 <a href="BusinessSupportSolutions.php">Business support solutions</a>
                 <a href="BusinessAdvisory.php">Business Advisory</a>
-                <a href="tax.php">Tax</a>
+                <a href="tax.php"> Tax </a>
             </div>
             </li>
         </ul>
-        </nav>
+        </nav
 
-      <a href="tax.php#ofices">Our Offices <span class="arrow"></span></a>
+      <a href="tax.php#ofices">Our Offices<span class="arrow">&#9662;</span></a>
       <a href="tax.php">Tax Services<span class="arrow"></span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
-
     </nav>
+    <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
@@ -84,7 +84,7 @@
  <div class="offer-right">
   <h3>Why We’re Unique</h3>
   <p>
-    At Bellwick Africa LLP, we combine technical excellence with a deep understanding of our clients’ industries to deliver tailored, practical solutions. 
+    At Bellwick LLP, we combine technical excellence with a deep understanding of our clients’ industries to deliver tailored, practical solutions. 
     What sets us apart is our commitment to long-term relationships, our partner-led approach, and our ability to adapt to evolving business needs. 
     Backed by a diverse and experienced team, we provide clear, actionable advice that supports sustainable growth and informed decision-making.
   </p>
@@ -99,7 +99,7 @@
       <h2>Enquire</h2>
       <h3>Let’s Start a Conversation That Moves Your Business Forward</h3>
       <p>
-      At Bellwick Africa LLP, we’re here to support your business with practical insights and strategic solutions. 
+      At Bellwick LLP, we’re here to support your business with practical insights and strategic solutions. 
       Whether you need audit, tax, or advisory services, our experienced team is ready to listen, understand your needs, and provide tailored guidance. 
       Get in touch with us today to explore how we can work together to achieve your goals.
       </p>
@@ -112,7 +112,7 @@
           <p><strong>Tel:</strong> <span class="contact-highlight">+254 709 676 000</span></p>
             <p><strong>Email:</strong> <a href="mailto:info@bellwickllp.com" class="contact-highlight">info@bellwickllp.com</a></p>
             <p>
-              <strong>Bellwick Africa LLP</strong><br>
+              <strong>Bellwick LLP</strong><br>
               Britam Tower, 24th Floor, Hospital Road,<br>
               P.O. Box 28018-00100,<br>
               Nairobi, Kenya
@@ -238,7 +238,7 @@
   </div>
 
   <div class="services-column side-info">
-    <h3>About Bellwick Africa</h3>
+    <h3>About Bellwick</h3>
     <ul>
       <li><a href="contacts.php">Contact</a></li>
       <li><a href="sectors.php">Sectors</a></li>

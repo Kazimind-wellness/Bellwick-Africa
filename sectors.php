@@ -12,17 +12,17 @@
 
 <header class="adili-header about-header">
   <div class="overlay"></div>
-    <div class="nav-background"> 
+  <div class="nav-background"> 
   <div class="nav-container">
-    <!-- <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Transparent_logo.png" alt=" Logo">
-    </div> -->
-  <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
+    <div class="logo">
+      <img src="logo.png" alt=" Logo">
+    </div>
+
     <nav class="nav-links">
       <a href="index.php">Home</a>
-      <a href="aboutUs.php">About Us<span class="arrow">&#9662;</span></a>
+      <a href="aboutUs.php">About Us<span class="arrow"></span></a>
 
-        <nav class="navbar">
+        <nav class="navbar" >
         <ul class="nav-links">
             <li class="dropdown">
             <a href="#">Our Services <span class="arrow">&#9662;</span></a>
@@ -37,11 +37,11 @@
         </nav>
 
       <a href="tax.php#ofices">Our Offices<span class="arrow">&#9662;</span></a>
-      <a href="tax.php">Tax Services<span class="arrow">&#9662;</span></a>
+      <a href="tax.php">Tax Services<span class="arrow"></span></a>
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contacts</a>
     </nav>
-
+    <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
@@ -329,7 +329,7 @@
   </div>
 
   <div class="services-column side-info">
-    <h3>About Bellwick Africa</h3>
+    <h3>About Bellwick</h3>
     <ul>
       <li><a href="contacts.php">Contact</a></li>
       <li><a href="sectors.php">Sectors</a></li>

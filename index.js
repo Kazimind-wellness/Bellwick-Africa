@@ -6,7 +6,7 @@ const tabData = {
     link: "https://example.com/compliance"
   },
   outsourcing: {
-    title: "Our Believe",
+    title: "Our Belief",
     description: "We believe that success comes from collaboration. Our team of reliable, approachable, and proactive professionals is committed to more than just meeting your needs—we work alongside you to help you achieve your goals. Running a business can be challenging but having a trusted advisor to provide guidance and act as a sounding board makes all the difference.",
     image: "believe.jpg",
     link: "https://example.com/outsourcing"

@@ -192,7 +192,6 @@ a {
 }
 
 .logo {
-    border: 2px solid #fff;
     border-radius: 3px;
     text-decoration: none;
     display: inline-flex;
@@ -204,6 +203,11 @@ a {
     line-height: 1;
     height: 40px;
     box-sizing: border-box;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
 }
 
 .main-nav {
