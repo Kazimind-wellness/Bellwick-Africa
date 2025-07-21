@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="aboutUs.css">
-  <link rel="stylesheet" href="styles.css">
   <style>
     /* Animation Styles */
     .scroll-animate {
@@ -50,40 +50,44 @@
   </style>
 </head>
 <body>
-<header class="adili-header about-header">
-  <div class="overlay"></div>
-<div class="nav-background"> 
-  <div class="nav-container">
+
+  <header class="floating-nav">
+    <div class="left-side">
     <div class="logo">
       <img src="logo.png" alt=" Logo">
     </div>
+      </div>
+      <nav class="main-nav">
+          <ul>
+              <li><a href="index.php">Home</a></li>
+              <li class="dropdown"><a href="aboutUs.php">About Us</a></li>
 
-    <nav class="nav-links">
-      <a href="index.php">Home</a>
-      <a href="aboutUs.php">About Us<span class="arrow"></span></a>
-
-        <nav class="navbar" >
-        <ul class="nav-links">
-            <li class="dropdown">
-            <a href="#">Our Services <span class="arrow">&#9662;</span></a>
-            <div class="dropdown-content" >
-                <a href="auditAndAssurance.php">Audit & Assurance</a>
-                <a href="BusinessSupportSolutions.php">Business support solutions</a>
-                <a href="BusinessAdvisory.php">Business Advisory</a>
-                <a href="tax.php"> Tax </a>
-            </div>
-            </li>
-        </ul>
-        </nav>
-      <a href="tax.php#ofices">Our Offices<span class="arrow">&#9662;</span></a>
-      <a href="tax.php">Tax Services<span class="arrow"></span></a>
-      <a href="sectors.php">Sectors</a>
-      <a href="contacts.php">Contacts</a>
-    </nav>
-    <a href="contacts.php" class="enquire-btn">ENQUIRE</a>
+                <li class="dropdown" style="height: 10px;">
+                <a href="#">Our Services <span class="arrow"></span></a>
+                <div class="dropdown-content" style="margin-top: 2rem;">
+                  <a href="auditAndAssurance.php">Audit & Assurance</a>
+                  <a href="BusinessSupportSolutions.php">Business support solutions</a>
+                  <a href="BusinessAdvisory.php">Business Advisory</a>
+                  <a href="tax.php">Tax</a>
+                </div>
+                </li>
+              <li class="dropdown"><a href="tax.php#ofices">Our Offices</a></li>
+              <li class="dropdown"><a href="tax.php" style="white-space: nowrap;">Tax Services</a></li>
+              <li><a href="sectors.php">Sectors</a></li>
+              <li><a href="contacts.php">Contacts</a></li>
+              
+          </ul>
+      </nav>
+       <a href="contacts.php" class="enquire-btn" >ENQUIRE</a>
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
+  </header>
+
+<header class="adili-header about-header">
+  <div class="overlay"></div>
+<div class="nav-backgroun"> 
+
     </div>
   </div>
   <h1 class="page-title">OVER 30 YEARS OF EXPERIENCE</h1>

@@ -66,39 +66,6 @@ html {
     z-index: 1;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    position: relative;
-}
-
-.nav-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 60%;
-    height: 2rem;
-    white-space: nowrap;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    position: relative;
-    padding: 0;
-    display:inline;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #ffcc99;
-}
-
-
-
 .arrow {
     font-size: 0.7em;
     margin-left: 3px;
