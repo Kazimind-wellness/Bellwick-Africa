@@ -62,8 +62,8 @@
       </div>
 
     <div class="arrow-buttons">
-      <button id="prevBtn">&#10094;</button>
-      <button id="nextBtn">&#10095;</button>
+      <button class="prevBtn">&#10094;</button>
+      <button class="nextBtn">&#10095;</button>
     </div>
     </section>
 
@@ -83,8 +83,8 @@
           </div>
       </div>
       <div class="arrow-buttons">
-        <button id="prevBtn">&#10094;</button>
-        <button id="nextBtn">&#10095;</button>
+        <button class="prevBtn">&#10094;</button>
+        <button class="nextBtn">&#10095;</button>
       </div>
     </section>
 
@@ -105,8 +105,8 @@
     </div>
 
     <div class="arrow-buttons">
-      <button id="prevBtn">&#10094;</button>
-      <button id="nextBtn">&#10095;</button>
+      <button class="prevBtn">&#10094;</button>
+      <button class="nextBtn">&#10095;</button>
     </div>
 
     </section>

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sectionCount = sections.length;
 
     // Auto-rotate every 5 seconds
-    const rotationInterval = setInterval(() => {
+    let rotationInterval = setInterval(() => {
         currentSection = (currentSection + 1) % sectionCount;
         showSection(currentSection);
     }, 5000);
@@ -31,26 +31,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-        // Arrow buttons
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-            if (prevBtn) {
+    // Select all prev/next buttons
+    const prevButtons = document.querySelectorAll('.prevBtn');
+    const nextButtons = document.querySelectorAll('.nextBtn');
+
+    // Only add listeners if buttons exist
+    if (prevButtons.length > 0) {
+        prevButtons.forEach(prevBtn => {
             prevBtn.addEventListener('click', () => {
                 if (currentSection > 0) {
-                showSection(currentSection - 1);
-                resetRotation();
+                    showSection(currentSection - 1);
+                    resetRotation();
                 }
             });
-            }
+        });
+    }
 
-            if (nextBtn) {
+    if (nextButtons.length > 0) {
+        nextButtons.forEach(nextBtn => {
             nextBtn.addEventListener('click', () => {
                 if (currentSection < sectionCount - 1) {
-                showSection(currentSection + 1);
-                resetRotation();
+                    showSection(currentSection + 1);
+                    resetRotation();
                 }
             });
-            }
+        });
+    }
+
 
     function showSection(index) {
         sections.forEach((section, i) => {
