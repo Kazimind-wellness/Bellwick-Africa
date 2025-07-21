@@ -134,7 +134,7 @@
 }
 
 .text-content h2 {
-    color: var(--accent-color);
+    color: #004766;
     font-size: 28px;
     margin-bottom: 20px;
     font-weight: 600;
@@ -267,17 +267,13 @@
 
 
 @media screen and (max-width: 768px) {
-
-
     .capabilities-section p{
         font-size:  15px;
      }
 
     .fullpage-section{
         height: 60vh;
-    }
-
-    
+    }    
 
 }
 
