@@ -61,7 +61,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(133, 23, 0, 0.5);
+    background: rgba(0, 156, 222, 0.5);
     /* Slightly dark reddish filter */
     z-index: 1;
 }
