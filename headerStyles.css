@@ -394,3 +394,9 @@ html {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media (max-width: 1024px){
+    .nav-links{
+        display: none;
+    }
+}
