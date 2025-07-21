@@ -97,7 +97,7 @@ a {
     align-items: center;
     padding: 20px 30px;
     box-sizing: border-box;
-    pointer-events: none;
+    pointer-events: auto;
     background: rgba(0, 0, 0, 0.4);
     /* allow background interactions */
 }
