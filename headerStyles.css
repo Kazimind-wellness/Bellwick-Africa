@@ -113,7 +113,7 @@ html {
 }
 
 .enquire-btn:hover {
-    background-color: #ff6733;
+    background-color: #696cf1;
 }
 
 .page-title {
@@ -242,7 +242,7 @@ html {
 }
 
 .side-info {
-    border-left: 1px solid #ef6f34;
+    border-left: 1px solid #eceae9;
     padding-left: 20px;
 }
 
@@ -274,7 +274,7 @@ html {
         border-left: none;
         padding-left: 0;
         margin-top: 20px;
-        border-top: 1px solid #ef6f34;
+        border-top: 1px solid #eceae9;
         padding-top: 20px;
     }
 }
@@ -306,10 +306,11 @@ html {
 .footer-content p {
     margin: 0.3rem 1rem;
     font-size: 0.9rem;
+    color: #eceae9;
 }
 
 .footer-content a {
-    color: #009CDE;
+    color: #eceae9;
     text-decoration: none;
 }
 
