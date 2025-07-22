@@ -265,7 +265,7 @@ a {
 
 .main-nav .dropdown::after {
     content: " \25BE";
-    font-size: .8em;
+    font-size: .7em;
     color: white;
     margin-left: 4px;
 }
