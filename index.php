@@ -10,6 +10,7 @@
 </head>
 <body>
 
+
   <!-- Floating Navigation -->
   <header class="floating-nav">
     <div class="left-side">
