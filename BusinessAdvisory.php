@@ -110,7 +110,7 @@
           <p><strong>Tel:</strong>  <span class="contact-highlight">+254 7918 25104 </span> /<span class="contact-highlight"> +254 7918 25166 </span></p>
             <p><strong>Email:</strong> <a href="mailto:info@bellwickllp.com" class="contact-highlight">info@bellwickllp.com</a></p>
             <p>
-              <strong>Bellwick</strong><br>
+              <strong>Bellwick Location:</strong><br>
               Britam Tower, 24th Floor, Hospital Road,<br>
               P.O. Box 28018-00100,<br>
               Nairobi, Kenya
