@@ -25,7 +25,7 @@ const tabData = {
   },
   strategy: {
     title: "Our Services",
-    description: "Bellwick Africa LLP provides expert audit, tax, accounting, and advisory services tailored to support your business goals. We combine technical precision with industry insight to deliver practical solutions that drive growth and ensure compliance.",    
+    description: "Bellwick LLP provides expert audit, tax, accounting, and advisory services tailored to support your business goals. We combine technical precision with industry insight to deliver practical solutions that drive growth and ensure compliance.",    
     image: "services.jpg",
     link: "https://example.com/strategy"
   }
