@@ -31,7 +31,7 @@
                 </div>
                 </li>
               <li><a href="sectors.php">Sectors</a></li>
-              <li><a href="contacts.php">Contacts</a></li>
+              <li><a href="contacts.php">Contact Us</a></li>
               
           </ul>
       </nav>
