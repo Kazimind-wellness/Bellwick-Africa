@@ -2,8 +2,8 @@
    Base Styles & Variables
    ========================================================================== */
 :root {
-    --primary-color: #009CDE;
-    --primary-dark: #009CDE;
+    --primary-color: #0195C2;
+    --primary-dark: #0195C2;
     --text-color: #444;
     --text-light: #555;
     --text-lighter: #777;
@@ -17,6 +17,9 @@
     --pattern-url: url('https://www.transparenttextures.com/patterns/white-wave.png');
 }
 
+* {
+    font-family: "Montserrat", sans-serif;
+}
 /* ==========================================================================
    Layout & Sections
    ========================================================================== */
@@ -150,7 +153,7 @@ h2 {
 /* Testimonial */
 .testimonial-section {
     padding: clamp(40px, 5vw, 60px) 20px;
-    background-color: var(--bg-lighter);
+    background-color: black;
     text-align: center;
 }
 
@@ -165,29 +168,7 @@ h2 {
     color: var(--text-lighter);
 }
 
-/* CTA Section */
-.cta-section {
-    padding: clamp(40px, 5vw, 60px) 20px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-align: center;
-}
 
-.cta-section h2 {
-    color: var(--white);
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--white);
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: var(--transition);
-    will-change: transform;
-}
 
 /* ==========================================================================
    Interactive States

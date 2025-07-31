@@ -44,9 +44,6 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
     
-    .reason:hover h3 {
-      color: #a0360c;
-    }
   </style>
 </head>
 <body>
@@ -64,15 +61,13 @@
 
                 <li class="dropdown" style="height: 10px;">
                 <a href="#">Our Services <span class="arrow"></span></a>
-                <div class="dropdown-content" style="margin-top: 2rem;">
+                <div class="dropdown-content">
                   <a href="auditAndAssurance.php">Audit & Assurance</a>
                   <a href="BusinessSupportSolutions.php">Business support solutions</a>
                   <a href="BusinessAdvisory.php">Business Advisory</a>
-                  <a href="tax.php">Tax</a>
+                  <a href="tax.php">Tax Services</a>
                 </div>
                 </li>
-              <li class="dropdown"><a href="tax.php#ofices">Our Offices</a></li>
-              <li class="dropdown"><a href="tax.php" style="white-space: nowrap;">Tax Services</a></li>
               <li><a href="sectors.php">Sectors</a></li>
               <li><a href="contacts.php">Contacts</a></li>
               
@@ -101,7 +96,7 @@
     </h2>
 
     <p class="experience-text scroll-animate">
-      Bellwick LLP is a leading consultancy firm based in Nairobi, providing accounting, audit, tax, and business advisory services to a wide range of businesses and individuals.
+      Bellwick is a leading consultancy firm based in Nairobi, providing accounting, audit, tax, and business advisory services to a wide range of businesses and individuals.
     </p>
     <p class="experience-text scroll-animate">
       With over 30 years of combined experience, we have earned a reputation as one of the region's most progressive firms. Our team, comprised of experts with backgrounds in big-four professional services firms, is dedicated to offering tailored advisory services that foster long-term relationships with our clients.

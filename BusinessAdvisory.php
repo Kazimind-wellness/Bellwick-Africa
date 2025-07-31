@@ -22,15 +22,13 @@
 
                 <li class="dropdown" style="height: 10px;">
                 <a href="#">Our Services <span class="arrow"></span></a>
-                <div class="dropdown-content" style="margin-top: 2rem;">
+                <div class="dropdown-content">
                   <a href="auditAndAssurance.php">Audit & Assurance</a>
                   <a href="BusinessSupportSolutions.php">Business support solutions</a>
                   <a href="BusinessAdvisory.php">Business Advisory</a>
-                  <a href="tax.php">Tax</a>
+                  <a href="tax.php">Tax Services</a>
                 </div>
                 </li>
-              <li class="dropdown"><a href="tax.php#ofices">Our Offices</a></li>
-              <li class="dropdown"><a href="tax.php" style="white-space: nowrap;">Tax Services</a></li>
               <li><a href="sectors.php">Sectors</a></li>
               <li><a href="contacts.php">Contacts</a></li>
               
@@ -84,7 +82,7 @@
  <div class="offer-right">
   <h3>Why We’re Unique</h3>
   <p>
-    At Bellwick LLP, we combine technical excellence with a deep understanding of our clients’ industries to deliver tailored, practical solutions. 
+    At Bellwick, we combine technical excellence with a deep understanding of our clients’ industries to deliver tailored, practical solutions. 
     What sets us apart is our commitment to long-term relationships, our partner-led approach, and our ability to adapt to evolving business needs. 
     Backed by a diverse and experienced team, we provide clear, actionable advice that supports sustainable growth and informed decision-making.
   </p>
@@ -99,7 +97,7 @@
       <h2>Enquire</h2>
       <h3>Let’s Start a Conversation That Moves Your Business Forward</h3>
       <p>
-      At Bellwick LLP, we’re here to support your business with practical insights and strategic solutions. 
+      At Bellwick, we’re here to support your business with practical insights and strategic solutions. 
       Whether you need audit, tax, or advisory services, our experienced team is ready to listen, understand your needs, and provide tailored guidance. 
       Get in touch with us today to explore how we can work together to achieve your goals.
       </p>
@@ -109,10 +107,10 @@
       <div class="enquire-right">
         <div class="country-tabs">
         <div class="office-details">
-          <p><strong>Tel:</strong> <span class="contact-highlight">+254 709 676 000</span></p>
+          <p><strong>Tel:</strong>  <span class="contact-highlight">+254 7918 25104 </span> /<span class="contact-highlight"> +254 7918 25166 </span></p>
             <p><strong>Email:</strong> <a href="mailto:info@bellwickllp.com" class="contact-highlight">info@bellwickllp.com</a></p>
             <p>
-              <strong>Bellwick LLP</strong><br>
+              <strong>Bellwick</strong><br>
               Britam Tower, 24th Floor, Hospital Road,<br>
               P.O. Box 28018-00100,<br>
               Nairobi, Kenya
@@ -167,7 +165,7 @@
       <a href="" id="servicesToggle">Our Services</a>
                   <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
                     <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
-                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Services</a>
                     <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
                     <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
                   </div>

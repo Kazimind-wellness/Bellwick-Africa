@@ -23,15 +23,13 @@
 
                 <li class="dropdown" style="height: 10px;">
                 <a href="#">Our Services <span class="arrow"></span></a>
-                <div class="dropdown-content" style="margin-top: 2rem;">
+                <div class="dropdown-content">
                   <a href="auditAndAssurance.php">Audit & Assurance</a>
                   <a href="BusinessSupportSolutions.php">Business support solutions</a>
                   <a href="BusinessAdvisory.php">Business Advisory</a>
-                  <a href="tax.php">Tax</a>
+                  <a href="tax.php">Tax Services</a>
                 </div>
                 </li>
-              <li class="dropdown"><a href="tax.php#ofices">Our Offices</a></li>
-              <li class="dropdown"><a href="tax.php" style="white-space: nowrap;">Tax Services</a></li>
               <li><a href="sectors.php">Sectors</a></li>
               <li><a href="contacts.php">Contacts</a></li>
               
@@ -66,7 +64,7 @@
         </p>
       </div>
       <div class="why-work-image">
-        <img src="image.png" alt="Team discussing" />
+        <img src="agriculture.jpg" alt="Team discussing" />
       </div>
     </div>
   </section>
@@ -97,7 +95,7 @@
         </p>
       </div>
       <div class="why-work-image">
-        <img src="image.png" alt="Team discussing" />
+        <img src="oil.jpg" alt="Team discussing" />
       </div>
     </div>
   </section>
@@ -213,7 +211,7 @@
   <section class="why-work">
     <div class="why-work-container">
       <div class="why-work-image">
-        <img src="pension.jpg" alt="Team discussing" />
+        <img src="pensio.jpg" alt="Team discussing" />
       </div>
       <div class="why-work-text">
         <h2>Pension schemes</h2>
@@ -257,7 +255,7 @@
       <a href="" id="servicesToggle">Our Services</a>
                   <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
                     <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
-                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Services</a>
                     <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
                     <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
                   </div>

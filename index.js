@@ -1,7 +1,7 @@
 const tabData = {
   compliance: {
-    title: "Bellwick Africa at a Glance",
-    description: "Bellwick Africa LLP (“Bellwick”) is a leading consultancy firm based in Nairobi, providing accounting, audit, tax, and business advisory services to businesses and individuals. Established in 2020, we combine professional expertise, technology, and a deep understanding of our clients' needs to deliver high-quality, effective, and responsive solutions.",
+    title: "Bellwick at a Glance",
+    description: "Bellwick LLP is a leading consultancy firm based in Nairobi, providing accounting, audit, tax, and business advisory services to businesses and individuals. Established in 2020, we combine professional expertise, technology, and a deep understanding of our clients' needs to deliver high-quality, effective, and responsive solutions.",
     image: "bellwick.jpg",
     link: "https://example.com/compliance"
   },

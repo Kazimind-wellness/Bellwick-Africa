@@ -1,3 +1,6 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
 
 .contact-form-section {
     padding: 40px 20px;
@@ -10,6 +13,7 @@
     flex-direction: column;
     gap: 20px;
 }
+
 
 .contact-form input,
 .contact-form textarea {
@@ -25,12 +29,12 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #0074a4;
+    border-color: #0195C2;
 }
 
 .contact-form button {
     width: 100px;
-    background-color: #005b8f;
+    background-color: #0195C2;
     color: #fff;
     font-weight: bold;
     border: none;
@@ -41,7 +45,7 @@
 }
 
 .contact-form button:hover {
-    background-color: #0074a4;
+    background-color: #0195C2;
 }
 
 @media screen and (max-width: 1000px) {

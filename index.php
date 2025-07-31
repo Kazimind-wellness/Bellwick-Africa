@@ -25,15 +25,13 @@
 
                 <li class="dropdown" style="height: 10px;">
                 <a href="#">Our Services <span class="arrow"></span></a>
-                <div class="dropdown-content" style="margin-top: 2rem;">
+                <div class="dropdown-content">
                 <a href="auditAndAssurance.php">Audit & Assurance</a>
                 <a href="BusinessSupportSolutions.php">Business support solutions</a>
                 <a href="BusinessAdvisory.php">Business Advisory</a>
-                <a href="tax.php">Tax</a>
+                <a href="tax.php">Tax Services</a>
                 </div>
                 </li>
-              <li class="dropdown"><a href="tax.php#ofices">Our Offices</a></li>
-              <li class="dropdown"><a href="tax.php">Tax Services</a></li>
               <li><a href="sectors.php">Sectors</a></li>
               <li><a href="contacts.php">Contacts</a></li>
               
@@ -69,7 +67,7 @@
     </section>
 
     <section class="fullpage-section" data-section="1">
-        <div class="header" style="--bg-image: url(https://pohcdn.com/sites/default/files/styles/node__blog_post__bp_banner__blog_post_banner/public/2021-01/Kirkjufell-volcano.jpg)">
+        <div class="header" style="--bg-image: url(nairobi2.jpg)">
             <div class="info">
                 <h4><a href="#category">Partnership</a></h4>
                 <h1>Partnering for Long-Term Success.</h1>
@@ -90,7 +88,7 @@
     </section>
 
     <section class="fullpage-section" data-section="2">
-        <div class="header" style="--bg-image: url(https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?q=80&w=2070&auto=format&fit=crop)">
+        <div class="header" style="--bg-image: url(nairobi3.jpg)">
             <div class="info">
                 <h4><a href="#category">Integrity</a></h4>
                 <h1>Rooted in Integrity. Focused on Results.</h1>
@@ -135,7 +133,7 @@
 
         <div class="container fade-in-up">
           <div class="sidebar">
-            <button class="tab active" data-tab="compliance">Bellwick <span>Africa at a Glance</span> </button>
+            <button class="tab active" data-tab="compliance">Bellwick at a Glance</span> </button>
             <button class="tab" data-tab="outsourcing"><span>Our</span> Belief</button>
             <button class="tab" data-tab="risk"><span>Our</span> Advisors</button>
             <button class="tab" data-tab="cyber">Welcome</button>
@@ -147,7 +145,7 @@
             <div class="text-content content-item">
               <h2 id="content-title">Bellwick at a Glance</h2>
               <p id="content-description">
-                Bellwick LLP ("Bellwick") is a leading consultancy firm based in Nairobi, providing accounting, 
+                Bellwick LLP  is a leading consultancy firm based in Nairobi, providing accounting, 
                 audit, tax, and business advisory services to businesses and individuals. Established in 2020, we 
                 combine professional expertise, technology, and a deep understanding of our clients' needs to deliver 
                 high-quality, effective, and responsive solutions.
@@ -173,7 +171,7 @@
       <a href="" id="servicesToggle">Our Services</a>
                   <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
                     <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
-                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Consulting</a>
+                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Services</a>
                     <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
                     <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
                   </div>

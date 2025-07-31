@@ -1,4 +1,8 @@
 /* ===== Base Styles ===== */
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
 .why-work {
   padding: 80px 5%;
   overflow: hidden;
@@ -8,6 +12,7 @@
 
 .why-work-container {
   display: flex;
+  
   flex-wrap: wrap;
   gap: 40px;
   max-width: 1200px;
