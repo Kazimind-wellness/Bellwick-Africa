@@ -71,7 +71,7 @@
 .enquire-btn {
     background-color: #0195C2;
     padding: 8px 16px;
-    border-radius: 2px;
+    border-radius: 10px;
     font-weight: bold;
     transition: background 0.3s ease;
 }
@@ -93,7 +93,7 @@
 
 /* TESTIMONIAL SECTION */
 .testimonial-section {
-    background: black;
+    background: #282828;
     color: #fff;
     padding: 80px 20px;
     text-align: center;
@@ -156,7 +156,7 @@
 .services-menu {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #282828;
     padding: 40px;
     color: #ffffff;
     gap: 30px;
@@ -255,9 +255,9 @@
 /* Footer STYLES */
 
 .bottom-footer {
-    background-color: black;
+    background-color: #282828;
     /* dark blue like in the image */
-    color: #009CDE;
+    color: #0195c2;
     /* orange-ish text */
     padding: 1rem 2rem;
     display: flex;
