@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="auditAndAssurance.css">
+  <link rel="icon" type="image/png" href="logo-icon.png">
 </head>
 <body>
     <header class="floating-nav">

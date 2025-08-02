@@ -64,6 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="headerStyles.css">
   <link rel="stylesheet" href="contacts.css">
+  <link rel="icon" type="image/png" href="logo-icon.png">
 </head>
 <body>
 
