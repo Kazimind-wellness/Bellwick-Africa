@@ -24,14 +24,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';      // Use your SMTP server
         $mail->SMTPAuth   = true;
-        $mail->Username = $_ENV['EMAIL_USERNAME'];
-        $mail->Password = $_ENV['EMAIL_PASSWORD']; // App password or SMTP password
+        $mail->Username = 'stevenmacharia2003@gmail.com';
+        $mail->Password = 'qnyouawdxhxoqfrh'; // App password or SMTP password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
         // Recipients
         $mail->setFrom($email, $name);
-        $mail->addAddress($_ENV['EMAIL_RECEIVER'], 'Bellwick Admin'); // Receiver email
+        $mail->addAddress('info@bellwickllp.com', 'Bellwick Admin'); // Receiver email
 
         // Content
         $mail->isHTML(true);
