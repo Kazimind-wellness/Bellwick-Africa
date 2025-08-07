@@ -162,7 +162,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <div class="services-column">
     <h3>Audit and Assurance</h3>
     <ul>
-      <li><a href="#">Audit services for clarity, insight and direction</a></li>
       <li><a href="#">External Audit</a></li>
       <li><a href="#">Assurance Reviews</a></li>
       <li><a href="#">Joint Financial Audits</a></li>
@@ -171,7 +170,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <h3>Tax Services</h3>
     <ul>
-      <li><a href="#">Relieving pressure through expert tax guidance</a></li>
       <li><a href="#">Tax Compliance</a></li>
       <li><a href="#">Indirect Taxes</a></li>
       <li><a href="#">Tax Advisory Services</a></li>
@@ -188,7 +186,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <h3>Business Advisory</h3>
     <ul>
-      <li><a href="#">Advice you can trust, a plan you can follow</a></li>
       <li><a href="#">Corporate Finance</a></li>
       <li><a href="#">Forensic Services</a></li>
       <li><a href="#">Transaction Services</a></li>

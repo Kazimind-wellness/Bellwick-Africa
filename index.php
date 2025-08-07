@@ -134,11 +134,11 @@
 
         <div class="container fade-in-up">
           <div class="sidebar">
-            <button class="tab active" data-tab="compliance">Bellwick at a Glance</span> </button>
-            <button class="tab" data-tab="outsourcing"><span>Our</span> Belief</button>
-            <button class="tab" data-tab="risk"><span>Our</span> Advisors</button>
+            <button class="tab active" data-tab="compliance">Bellwick<span> at a Glance</span></button>
+            <button class="tab" data-tab="outsourcing"><span>Our </span>Belief</button>
+            <button class="tab" data-tab="risk"><span>Our </span>Advisors</button>
             <button class="tab" data-tab="cyber">Welcome</button>
-            <button class="tab" data-tab="strategy"><span>Our</span> Services</button>
+            <button class="tab" data-tab="strategy"><span>Our </span>Services</button>
           </div>
 
           <div class="content">
@@ -210,7 +210,6 @@
   <div class="services-column">
     <h3>Audit and Assurance</h3>
     <ul>
-      <li><a href="#">Audit services for clarity, insight and direction</a></li>
       <li><a href="#">External Audit</a></li>
       <li><a href="#">Assurance Reviews</a></li>
       <li><a href="#">Joint Financial Audits</a></li>
@@ -219,7 +218,6 @@
 
     <h3>Tax Services</h3>
     <ul>
-      <li><a href="#">Relieving pressure through expert tax guidance</a></li>
       <li><a href="#">Tax Compliance</a></li>
       <li><a href="#">Indirect Taxes</a></li>
       <li><a href="#">Tax Advisory Services</a></li>
@@ -236,7 +234,6 @@
 
     <h3>Business Advisory</h3>
     <ul>
-      <li><a href="#">Advice you can trust, a plan you can follow</a></li>
       <li><a href="#">Corporate Finance</a></li>
       <li><a href="#">Forensic Services</a></li>
       <li><a href="#">Transaction Services</a></li>
