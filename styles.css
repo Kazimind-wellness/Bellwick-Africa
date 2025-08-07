@@ -509,7 +509,7 @@ dialog a:hover {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
     .main-nav {
         display: none;
     }
