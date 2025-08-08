@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
   </div>
 
-  <h1 class="page-title">Contacts Us</h1>
+  <h1 class="page-title">Contact Us</h1>
 </header>
 
 
