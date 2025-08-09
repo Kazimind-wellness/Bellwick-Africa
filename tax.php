@@ -121,7 +121,7 @@
           </div>
 
           <div class="enquire-left" style="width: 100%;">
-            <h2>Tax Advisory Services</h2>
+            <h2 id="Tax-advisory">Tax Advisory Services</h2>
             <p>
               - Transaction-specific tax implications and planning<br>
               - Structuring for tax efficiency in mergers and acquisitions<br>
@@ -132,7 +132,7 @@
 
 
           <div class="enquire-left">
-            <h2>Tax Compliance</h2>
+            <h2 id="Tax-comp">Tax Compliance</h2>
 
             <h3>Direct Taxes</h3>
             <p><strong>Income Tax Returns:</strong><br>
@@ -161,7 +161,7 @@
 
           <div class="enquire-right enquire-left"> 
 
-            <h2>Indirect Taxes</h2>
+            <h2 id="indirect-tax">Indirect Taxes</h2>
 
             <h3>Value Added Tax (VAT)</h3>
             <p>
@@ -248,17 +248,17 @@
   <div class="services-column">
     <h3>Audit and Assurance</h3>
     <ul>
-      <li><a href="#">External Audit</a></li>
-      <li><a href="#">Assurance Reviews</a></li>
-      <li><a href="#">Joint Financial Audits</a></li>
-      <li><a href="#">Audit Preparation Support </a></li>
+      <li><a href="auditAndAssurance.php#Ext-Audit">External Audit</a></li>
+      <li><a href="auditAndAssurance.php#assu-rev">Assurance Reviews</a></li>
+      <li><a href="auditAndAssurance.php#joint-finacials">Joint Financial Audits</a></li>
+      <li><a href="auditAndAssurance.php#prep-support">Audit Preparation Support </a></li>
     </ul>
 
     <h3>Tax Services</h3>
     <ul>
-      <li><a href="#">Tax Compliance</a></li>
-      <li><a href="#">Indirect Taxes</a></li>
-      <li><a href="#">Tax Advisory Services</a></li>
+      <li><a href="tax.php#Tax-comp">Tax Compliance</a></li>
+      <li><a href="tax.php#indirect-tax">Indirect Taxes</a></li>
+      <li><a href="tax.php#Tax-advisory">Tax Advisory Services</a></li>
     </ul>
   </div>
 
@@ -266,15 +266,15 @@
 
     <h3>Business Support And Solutions</h3>
     <ul>
-      <li><a href="#">Outsourced Accounting</a></li>
-      <li><a href="#">Payroll & Pensions Services</a></li>
+      <li><a href="BusinessSupportSolutions.php#out-sourced">Outsourced Accounting</a></li>
+      <li><a href="BusinessSupportSolutions.php#pay-roll">Payroll & Pensions Services</a></li>
     </ul>
 
     <h3>Business Advisory</h3>
     <ul>
-      <li><a href="#">Corporate Finance</a></li>
-      <li><a href="#">Forensic Services</a></li>
-      <li><a href="#">Transaction Services</a></li>
+      <li><a href="BusinessAdvisory.php#coop-fin">Corporate Finance</a></li>
+      <li><a href="BusinessAdvisory.php#for-services">Forensic Services</a></li>
+      <li><a href="BusinessAdvisory.php#trans-ser">Transaction Services</a></li>
     </ul>
   </div>
 

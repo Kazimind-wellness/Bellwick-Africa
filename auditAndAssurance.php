@@ -122,7 +122,7 @@
 
               <div class="enquire-left">
                 <h2>Audit and Assurance</h2>
-                <h3>External Audit</h3>
+                <h3 id="Ext-Audit">External Audit</h3>
                 <p>
                 We spend time to really understand you, your business and your objectives.  We undertake work to the highest standards while causing the least disruption to your day-to-day operations during the audit. 
                 Our comprehensive audit approach will be tailored to consider whether your financial statements present a true and fair view of your business and provides scope for our specialists to suggest potential improvements to your systems and operations. We ensure all issues or concerns identified are handled sensitively and with a constructive, common-sense approach.
@@ -130,19 +130,19 @@
               </div>
 
               <div class="enquire-left enquire-right">
-                <h3>Assurance Reviews</h3>
+                <h3 id="assu-rev">Assurance Reviews</h3>
                 <p>
                 An assurance review provides readers of your financial statements with a certain level of comfort over the figures and information without requiring a full audit. Our team has a wealth of experience in conducting assurance reviews, giving your stakeholders the comfort of knowing your financial statements have been independently reviewed.
                 </p>
               </div>
             <div class="enquire-left">
-                <h3>Joint Financial Audits</h3>
+                <h3 id="joint-finacials">Joint Financial Audits</h3>
                 <p>
                 Our unique skill set and experience give us an unparalleled opportunity to collaborate with other audit firms, helping them conduct audits in Kenya or internationally.
                 </p>
           </div>
               <div class="enquire-left enquire-right">
-                <h3>Audit Preparation Support</h3>
+                <h3 id="prep-support">Audit Preparation Support</h3>
                 <p>
               Preparing for audits can sometimes be daunting. Bellwick helps non-audit clients get ready for their statutory audits, ensuring compliance while allowing them to focus on their business. We also assist clients in preparing financial statements that meet local regulatory requirements.
                 </p>
@@ -205,20 +205,20 @@
     <h2>Services</h2>
   </div>
 
-   <div class="services-column">
+    <div class="services-column">
     <h3>Audit and Assurance</h3>
     <ul>
-      <li><a href="#">External Audit</a></li>
-      <li><a href="#">Assurance Reviews</a></li>
-      <li><a href="#">Joint Financial Audits</a></li>
-      <li><a href="#">Audit Preparation Support </a></li>
+      <li><a href="auditAndAssurance.php#Ext-Audit">External Audit</a></li>
+      <li><a href="auditAndAssurance.php#assu-rev">Assurance Reviews</a></li>
+      <li><a href="auditAndAssurance.php#joint-finacials">Joint Financial Audits</a></li>
+      <li><a href="auditAndAssurance.php#prep-support">Audit Preparation Support </a></li>
     </ul>
 
     <h3>Tax Services</h3>
     <ul>
-      <li><a href="#">Tax Compliance</a></li>
-      <li><a href="#">Indirect Taxes</a></li>
-      <li><a href="#">Tax Advisory Services</a></li>
+      <li><a href="tax.php#Tax-comp">Tax Compliance</a></li>
+      <li><a href="tax.php#indirect-tax">Indirect Taxes</a></li>
+      <li><a href="tax.php#Tax-advisory">Tax Advisory Services</a></li>
     </ul>
   </div>
 
@@ -226,18 +226,18 @@
 
     <h3>Business Support And Solutions</h3>
     <ul>
-      <li><a href="#">Outsourced Accounting</a></li>
-      <li><a href="#">Payroll & Pensions Services</a></li>
+      <li><a href="BusinessSupportSolutions.php#out-sourced">Outsourced Accounting</a></li>
+      <li><a href="BusinessSupportSolutions.php#pay-roll">Payroll & Pensions Services</a></li>
     </ul>
 
     <h3>Business Advisory</h3>
     <ul>
-      <li><a href="#">Corporate Finance</a></li>
-      <li><a href="#">Forensic Services</a></li>
-      <li><a href="#">Transaction Services</a></li>
+      <li><a href="BusinessAdvisory.php#coop-fin">Corporate Finance</a></li>
+      <li><a href="BusinessAdvisory.php#for-services">Forensic Services</a></li>
+      <li><a href="BusinessAdvisory.php#trans-ser">Transaction Services</a></li>
     </ul>
   </div>
-
+  
   <div class="services-column side-info">
     <h3>About Bellwick</h3>
     <ul>

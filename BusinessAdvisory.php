@@ -119,7 +119,7 @@
         </div>
       </div>
     </div>
-      <div class="enquire-left">
+      <div class="enquire-left" id="coop-fin">
       <h2>Business Advisory</h2>
       <h3>Corporate finance</h3>
       <p>
@@ -130,14 +130,14 @@
       </p>
     </div>
 
-        <div class="enquire-left enquire-right">
+        <div class="enquire-left enquire-right" id="for-services">
           <h3>Forensic Services</h3>
           <p>
         We help protect your business’s value by acting swiftly to minimise costs and safeguard its reputation. Whether it’s getting major projects back on track, uncovering financial crime, managing crises, or resolving disputes, we use forensic technology to address challenges efficiently.
           </p>
       </div>
 
-    <div class="enquire-left">    
+    <div class="enquire-left" id="trans-ser">    
       <h3>Transaction Services</h3>
       <p>
       We support clients in buying, selling, or refinancing their business—whether in whole or in part. Our financial due diligence process identifies key opportunities and risks, ensuring informed decision-making and strategic growth.
@@ -200,20 +200,20 @@
     <h2>Services</h2>
   </div>
 
-  <div class="services-column">
+   <div class="services-column">
     <h3>Audit and Assurance</h3>
     <ul>
-      <li><a href="#">External Audit</a></li>
-      <li><a href="#">Assurance Reviews</a></li>
-      <li><a href="#">Joint Financial Audits</a></li>
-      <li><a href="#">Audit Preparation Support </a></li>
+      <li><a href="auditAndAssurance.php#Ext-Audit">External Audit</a></li>
+      <li><a href="auditAndAssurance.php#assu-rev">Assurance Reviews</a></li>
+      <li><a href="auditAndAssurance.php#joint-finacials">Joint Financial Audits</a></li>
+      <li><a href="auditAndAssurance.php#prep-support">Audit Preparation Support </a></li>
     </ul>
 
     <h3>Tax Services</h3>
     <ul>
-      <li><a href="#">Tax Compliance</a></li>
-      <li><a href="#">Indirect Taxes</a></li>
-      <li><a href="#">Tax Advisory Services</a></li>
+      <li><a href="tax.php#Tax-comp">Tax Compliance</a></li>
+      <li><a href="tax.php#indirect-tax">Indirect Taxes</a></li>
+      <li><a href="tax.php#Tax-advisory">Tax Advisory Services</a></li>
     </ul>
   </div>
 
@@ -221,18 +221,18 @@
 
     <h3>Business Support And Solutions</h3>
     <ul>
-      <li><a href="#">Outsourced Accounting</a></li>
-      <li><a href="#">Payroll & Pensions Services</a></li>
+      <li><a href="BusinessSupportSolutions.php#out-sourced">Outsourced Accounting</a></li>
+      <li><a href="BusinessSupportSolutions.php#pay-roll">Payroll & Pensions Services</a></li>
     </ul>
 
     <h3>Business Advisory</h3>
     <ul>
-      <li><a href="#">Corporate Finance</a></li>
-      <li><a href="#">Forensic Services</a></li>
-      <li><a href="#">Transaction Services</a></li>
+      <li><a href="BusinessAdvisory.php#coop-fin">Corporate Finance</a></li>
+      <li><a href="BusinessAdvisory.php#for-services">Forensic Services</a></li>
+      <li><a href="BusinessAdvisory.php#trans-ser">Transaction Services</a></li>
     </ul>
   </div>
-
+  
   <div class="services-column side-info">
     <h3>About Bellwick</h3>
     <ul>

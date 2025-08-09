@@ -118,7 +118,7 @@
     </div>
 
       <div class="enquire-left">
-      <h2>Business support solutions</h2>
+      <h2 id="out-sourced">Business support solutions</h2>
       <h3>Outsourced Accounting</h3>
       <p>
       <strong> Accounts preparation, minus the pressure</strong> <br>
@@ -126,7 +126,7 @@
       </p>
       </div>
       
-      <div class="enquire-right enquire-left">
+      <div class="enquire-right enquire-left" id="pay-roll">
       <h3>Payroll & Pensions services</h3>
       <p>
 
@@ -194,20 +194,20 @@
 
 
 
-  <div class="services-column">
+   <div class="services-column">
     <h3>Audit and Assurance</h3>
     <ul>
-      <li><a href="#">External Audit</a></li>
-      <li><a href="#">Assurance Reviews</a></li>
-      <li><a href="#">Joint Financial Audits</a></li>
-      <li><a href="#">Audit Preparation Support </a></li>
+      <li><a href="auditAndAssurance.php#Ext-Audit">External Audit</a></li>
+      <li><a href="auditAndAssurance.php#assu-rev">Assurance Reviews</a></li>
+      <li><a href="auditAndAssurance.php#joint-finacials">Joint Financial Audits</a></li>
+      <li><a href="auditAndAssurance.php#prep-support">Audit Preparation Support </a></li>
     </ul>
 
     <h3>Tax Services</h3>
     <ul>
-      <li><a href="#">Tax Compliance</a></li>
-      <li><a href="#">Indirect Taxes</a></li>
-      <li><a href="#">Tax Advisory Services</a></li>
+      <li><a href="tax.php#Tax-comp">Tax Compliance</a></li>
+      <li><a href="tax.php#indirect-tax">Indirect Taxes</a></li>
+      <li><a href="tax.php#Tax-advisory">Tax Advisory Services</a></li>
     </ul>
   </div>
 
@@ -215,18 +215,18 @@
 
     <h3>Business Support And Solutions</h3>
     <ul>
-      <li><a href="#">Outsourced Accounting</a></li>
-      <li><a href="#">Payroll & Pensions Services</a></li>
+      <li><a href="BusinessSupportSolutions.php#out-sourced">Outsourced Accounting</a></li>
+      <li><a href="BusinessSupportSolutions.php#pay-roll">Payroll & Pensions Services</a></li>
     </ul>
 
     <h3>Business Advisory</h3>
     <ul>
-      <li><a href="#">Corporate Finance</a></li>
-      <li><a href="#">Forensic Services</a></li>
-      <li><a href="#">Transaction Services</a></li>
+      <li><a href="BusinessAdvisory.php#coop-fin">Corporate Finance</a></li>
+      <li><a href="BusinessAdvisory.php#for-services">Forensic Services</a></li>
+      <li><a href="BusinessAdvisory.php#trans-ser">Transaction Services</a></li>
     </ul>
   </div>
-
+  
   <div class="services-column side-info">
     <h3>About Bellwick</h3>
     <ul>
