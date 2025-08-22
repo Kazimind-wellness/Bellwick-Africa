@@ -70,8 +70,9 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #1B2030 var(--bg-image, url(upperhill.jpg)) 50% 0 no-repeat;
+    background: #1B2030 var(--bg-image, url(upperhill.jpg)) center center no-repeat;
     background-size: cover;
+    background-position: bottom center;
     background-attachment: fixed;
     z-index: 0;
     animation:
