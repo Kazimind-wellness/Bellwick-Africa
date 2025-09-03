@@ -164,7 +164,7 @@
                   </div>
 
       <a href="sectors.php">Sectors</a>
-      <a href="contacts.php">Contacts</a>
+      <a href="contacts.php">Contact Us</a>
   </dialog>
   <script src="script.js"></script>
 
@@ -174,7 +174,7 @@
 "The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="autho">
-      – <strong>Head of Investigations - IFRC</strong>
+      – <strong>COMMENTS FROM CLIENTS</strong>
     </p>
   </div>
 </section>
@@ -247,7 +247,7 @@
 
 <footer class="bottom-footer">
   <div class="footer-content">
-    <p>© 2025 Adili Group All rights reserved</p>
+    <p>© 2025 Bellwick All rights reserved</p>
     <p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
   </div>
 

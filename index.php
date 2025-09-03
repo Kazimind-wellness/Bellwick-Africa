@@ -178,7 +178,7 @@
                   </div>
 
       <a href="sectors.php">Sectors</a>
-      <a href="contacts.php">Contacts</a>
+      <a href="contacts.php">Contact Us</a>
   </dialog>
   <script src="script.js"></script>
 
@@ -189,7 +189,7 @@
 "The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="auth">
-      – <strong>Head of Investigations - IFRC</strong>
+      – <strong>COMMENTS FROM CLIENTS</strong>
     </p>
   </div>
 </section>

@@ -86,13 +86,13 @@
 
     </div>
   </div>
-  <h1 class="page-title">OVER 30 YEARS OF EXPERIENCE</h1>
+  <h1 class="page-title">MANY YEARS OF EXPERIENCE</h1>
 </header>
 
 <section class="adili-about-section">
   <div class="container-about scroll-animate">
     <h2 class="scroll-animate">
-      The Bellwick is a leading pan-African <br>
+      Bellwick is a leading consultancy firm <br>
       corporate advisory firm with key offerings:
     </h2>
 
@@ -150,7 +150,7 @@
     <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
   </div>
   <a href="sectors.php">Sectors</a>
-  <a href="contacts.php">Contacts</a>
+  <a href="contacts.php">Contact US</a>
 </dialog>
   <script src="script.js"></script>
 
@@ -160,7 +160,7 @@
       "The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
     </p>
     <p class="autho">
-      – <strong>Head of Investigations - IFRC</strong>
+      – <strong>COMMENTS FROM CLIENTS</strong>
     </p>
   </div>
 </section>
