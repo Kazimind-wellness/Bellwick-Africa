@@ -57,8 +57,9 @@
       <div class="audit-text">
         <h2>Business support solutions</h2>
         <p>
-          Our audit approach requires us to truly understand your business and identify the key areas of risk, both within your company and the market you operate in. Our audit team diligently reviews the underlying processes and controls that drive your financial reporting, using technical expertise to provide a robust audit within a set timetable we agree with you.
-        </p>
+        Running a business while keeping on top of company accounts and tax is incredibly demanding. Having a team you can consistently depend on is key 
+        to staying focused on success. Whether you’re a sole trader, partnership or limited company, our expert accountants take the stress out of 
+        preparing your accounts.        </p>
         <a href="contacts.php" class="enquire-button">ENQUIRE</a>
       </div>
       <div class="audit-image">
@@ -171,7 +172,7 @@
 <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
-"The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
+The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts.
     </p>
     <p class="autho">
       – <strong>COMMENTS FROM CLIENTS</strong>

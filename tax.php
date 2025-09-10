@@ -224,7 +224,7 @@
 <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
-"The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts."
+The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts.
     </p>
     <p class="autho">
       – <strong>COMMENTS FROM CLIENTS</strong>
