@@ -227,6 +227,14 @@ The risk team's performance was exceptional and went beyond our expectations. Th
       <div class="nav-social">
             <a href="https://www.linkedin.com/company/bellwickllp/">linkedIn</a>
       </div>
+          <h3>Cotacts</h3>
+    <ul>
+      <li>Tel: +254 7918 25104 / +254 7918 25166</li>
+      <li>Email: info@bellwickllp.com</li>
+      <li>Britam Tower, 24th Floor, Hospital Road,</li>
+      <li>P.O. Box 28018-00100,</li>
+      <li>Nairobi, Kenya </li>
+    </ul>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
   </div>
