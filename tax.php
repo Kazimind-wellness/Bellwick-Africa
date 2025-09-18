@@ -276,7 +276,7 @@ The risk team's performance was exceptional and went beyond our expectations. Th
       <div class="nav-social">
             <a href="https://www.linkedin.com/company/bellwickllp/">linkedIn</a>
       </div>
-      
+      <br>
     <h3>Cotacts</h3>
     <ul>
       <li>Tel: +254 7918 25104 / +254 7918 25166</li>

@@ -237,7 +237,7 @@
       <h3>Socials</h3>
       <div class="nav-social">
             <a href="https://www.linkedin.com/company/bellwickllp/">linkedIn</a>
-      </div>
+      </div><br>
           <h3>Cotacts</h3>
     <ul>
       <li>Tel: +254 7918 25104 / +254 7918 25166</li>
