@@ -200,7 +200,7 @@
       <strong>  Expert knowledge that stands out from the crowd.</strong>
         <p>
           We can support your business by providing not only regular management information but also detailed forecasts in a manner understood and accepted by financers. Accurate and up-to-date information presented in a clear and intelligible form can often make the difference between obtaining additional funds required for the business – or failing to do so.
-       </p>
+      </p>
       </div>
       <div class="why-work-image">
         <img src="tech.jpg" alt="Team discussing" />
@@ -254,20 +254,20 @@
       <a href="aboutUs.php">About Us</a>
 
       <a href="" id="servicesToggle">Our Services</a>
-                  <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
-                    <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
-                    <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Services</a>
-                    <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
-                    <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
-                  </div>
+        <div id="servicesLinks" style="display: none; margin: 0.5rem 0; font-size: 10px;">
+          <a href="auditAndAssurance.php" style="display: block; margin: 0.3rem 0;">Audit & Assurance</a>
+          <a href="tax.php" style="display: block; margin: 0.3rem 0;">Tax Services</a>
+          <a href="BusinessAdvisory.php" style="display: block; margin: 0.3rem 0;">Business Advisory</a>
+          <a href="BusinessSupportSolutions.php" style="display: block; margin: 0.3rem 0;">Business Support</a>
+        </div>
 
       <a href="sectors.php">Sectors</a>
       <a href="contacts.php">Contact Us</a>
-  </dialog>
+    </dialog>
     <script src="script.js"></script>
 
 
-<section class="testimonial-section">
+<!-- <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
     The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts.
@@ -276,7 +276,7 @@
       – <strong>COMMENTS FROM CLIENTS</strong>
     </p>
   </div>
-</section>
+</section> -->
 
 
 <section class="cta-section">
@@ -293,7 +293,7 @@
 
 
   <div class="services-column">
-    <h3>Audit and Assurance</h3>
+    <a href="auditAndAssurance.php"><h3>Audit and Assurance</h3></a>
     <ul>
       <li><a href="auditAndAssurance.php#Ext-Audit">External Audit</a></li>
       <li><a href="auditAndAssurance.php#assu-rev">Assurance Reviews</a></li>
@@ -301,7 +301,7 @@
       <li><a href="auditAndAssurance.php#prep-support">Audit Preparation Support </a></li>
     </ul>
 
-    <h3>Tax Services</h3>
+    <a href="tax.php"><h3>Tax Services</h3></a>
     <ul>
       <li><a href="tax.php#Tax-comp">Tax Compliance</a></li>
       <li><a href="tax.php#indirect-tax">Indirect Taxes</a></li>
@@ -311,13 +311,13 @@
 
   <div class="services-column">
 
-    <h3>Business Support And Solutions</h3>
+    <a href="BusinessSupportSolutions.php"><h3>Business Support And Solutions</h3></a>
     <ul>
       <li><a href="BusinessSupportSolutions.php#out-sourced">Outsourced Accounting</a></li>
       <li><a href="BusinessSupportSolutions.php#pay-roll">Payroll & Pensions Services</a></li>
     </ul>
 
-    <h3>Business Advisory</h3>
+    <a href="BusinessAdvisory.php"><h3>Business Advisory</h3></a>
     <ul>
       <li><a href="BusinessAdvisory.php#coop-fin">Corporate Finance</a></li>
       <li><a href="BusinessAdvisory.php#for-services">Forensic Services</a></li>
@@ -326,7 +326,7 @@
   </div>
 
   <div class="services-column side-info">
-    <h3>About Bellwick</h3>
+    <a href="aboutUs.php"><h3>About Bellwick</h3></a>
     <ul>
       <li><a href="contacts.php">Contact</a></li>
       <li><a href="sectors.php">Sectors</a></li>
@@ -334,9 +334,7 @@
 
       <h3>Socials</h3>
       <div class="nav-social">
-            <a href="#">FB</a>
-            <a href="#">TW</a>
-            <a href="#">IG</a>
+            <a href="https://www.linkedin.com/company/bellwickllp/">linkedIn</a>
       </div>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->

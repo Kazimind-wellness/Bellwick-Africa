@@ -105,19 +105,7 @@
 
     </div>
 
-      <div class="enquire-right">
-        <div class="country-tabs">
-        <div class="office-details">
-          <p><strong>Tel:</strong>  <span class="contact-highlight">+254 7918 25104 </span> /<span class="contact-highlight"> +254 7918 25166 </span></p>
-            <p><strong>Email:</strong> <a href="mailto:info@bellwickllp.com" class="contact-highlight">info@bellwickllp.com</a></p>
-            <p>
-              <strong>Bellwick Location:</strong><br>
-              Britam Tower, 24th Floor, Hospital Road,<br>
-              P.O. Box 28018-00100,<br>
-              Nairobi, Kenya
-            </p>
-        </div>
-      </div>
+                <div class="enquire-right" style="display: none;">
     </div>
       <div class="enquire-left" id="coop-fin">
       <h2>Business Advisory</h2>
@@ -177,7 +165,7 @@
   <script src="script.js"></script>
 
 
-<section class="testimonial-section">
+<!-- <section class="testimonial-section">
   <div class="testimonial">
     <p class="quote">
 The risk team's performance was exceptional and went beyond our expectations. Their agility and adaptability in dynamic environments enabled them to carry out and deliver complex investigations within challenging security contexts.    </p>
@@ -185,7 +173,7 @@ The risk team's performance was exceptional and went beyond our expectations. Th
       – <strong>COMMENTS FROM CLIENTS</strong>
     </p>
   </div>
-</section>
+</section> -->
 
 
 
@@ -201,7 +189,7 @@ The risk team's performance was exceptional and went beyond our expectations. Th
   </div>
 
    <div class="services-column">
-    <h3>Audit and Assurance</h3>
+    <a href="auditAndAssurance.php"><h3>Audit and Assurance</h3></a>
     <ul>
       <li><a href="auditAndAssurance.php#Ext-Audit">External Audit</a></li>
       <li><a href="auditAndAssurance.php#assu-rev">Assurance Reviews</a></li>
@@ -209,7 +197,7 @@ The risk team's performance was exceptional and went beyond our expectations. Th
       <li><a href="auditAndAssurance.php#prep-support">Audit Preparation Support </a></li>
     </ul>
 
-    <h3>Tax Services</h3>
+    <a href="tax.php"><h3>Tax Services</h3></a>
     <ul>
       <li><a href="tax.php#Tax-comp">Tax Compliance</a></li>
       <li><a href="tax.php#indirect-tax">Indirect Taxes</a></li>
@@ -219,13 +207,13 @@ The risk team's performance was exceptional and went beyond our expectations. Th
 
   <div class="services-column">
 
-    <h3>Business Support And Solutions</h3>
+    <a href="BusinessSupportSolutions.php"><h3>Business Support And Solutions</h3></a>
     <ul>
       <li><a href="BusinessSupportSolutions.php#out-sourced">Outsourced Accounting</a></li>
       <li><a href="BusinessSupportSolutions.php#pay-roll">Payroll & Pensions Services</a></li>
     </ul>
 
-    <h3>Business Advisory</h3>
+    <a href="BusinessAdvisory.php"><h3>Business Advisory</h3></a>
     <ul>
       <li><a href="BusinessAdvisory.php#coop-fin">Corporate Finance</a></li>
       <li><a href="BusinessAdvisory.php#for-services">Forensic Services</a></li>
@@ -234,7 +222,7 @@ The risk team's performance was exceptional and went beyond our expectations. Th
   </div>
   
   <div class="services-column side-info">
-    <h3>About Bellwick</h3>
+    <a href="aboutUs.php"><h3>About Bellwick</h3></a>
     <ul>
       <li><a href="contacts.php">Contact</a></li>
       <li><a href="sectors.php">Sectors</a></li>
@@ -242,9 +230,7 @@ The risk team's performance was exceptional and went beyond our expectations. Th
 
       <h3>Socials</h3>
       <div class="nav-social">
-            <a href="#">FB</a>
-            <a href="#">TW</a>
-            <a href="#">IG</a>
+            <a href="https://www.linkedin.com/company/bellwickllp/">linkedIn</a>
       </div>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
