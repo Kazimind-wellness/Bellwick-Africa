@@ -229,7 +229,7 @@ The risk team's performance was exceptional and went beyond our expectations. Th
       </div><br>
           <h3>Contacts</h3>
     <ul>
-      <li>Tel: +254 7918 25104 / +254 7918 25166</li>
+      <li>Tel: +254 791 825 104 / +254 791 825 166</li>
       <li>Email: info@bellwickllp.com</li>
       <li>Britam Tower, 24th Floor, Hospital Road,</li>
       <li>P.O. Box 28018-00100,</li>
