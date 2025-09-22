@@ -218,11 +218,11 @@
     </div> <br>
     <h3>Contacts</h3>
     <ul>
-      <li>Tel: +254 791 825 104 / +254 791 825 166</li>
-      <li>Email: info@bellwickllp.com</li>
       <li>Britam Tower, 24th Floor, Hospital Road,</li>
       <li>P.O. Box 28018-00100,</li>
       <li>Nairobi, Kenya </li>
+      <li>Email: info@bellwickllp.com</li>
+      <li>Tel: +254 791 825 104 / +254 791 825 166</li>
     </ul>
   </div>
 </div>

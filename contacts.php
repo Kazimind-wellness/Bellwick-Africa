@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               
           </ul>
       </nav>
-       <a href="contacts.php" class="enquire-btn" >ENQUIRE</a>
+      <a href="contacts.php" class="enquire-btn" >ENQUIRE</a>
       <div class="right-side">
           <a href="#" class="menu" id="openMenu"></a>
       </div>
@@ -98,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <header class="adili-header about-header">
   <div class="overlay"></div>
- <div class="nav-backgroun"> 
+  <div class="nav-backgroun"> 
     </div>
   </div>
 
@@ -116,14 +116,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </section>
                 <div class="country-tabs">
                 <div class="office-details">
-                  <p><strong>Tel:</strong> <span class="contact-highlight">+254 791 825 104 </span> /<span class="contact-highlight"> +254 791 825 166 </span></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@bellwickllp.com" class="contact-highlight">info@bellwickllp.com</a></p>
-                    <p>
                       <strong>Bellwick Location:</strong><br>
                       Britam Tower, 24th Floor, Hospital Road,<br>
                       P.O. Box 28018-00100,<br>
                       Nairobi, Kenya
                     </p>
+                    <p><strong>Tel:</strong> <span class="contact-highlight">+254 791 825 104 </span> /<span class="contact-highlight"> +254 791 825 166 </span></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@bellwickllp.com" class="contact-highlight">info@bellwickllp.com</a></p>
+                    <p>
                 </div>
               </div>
 
@@ -216,11 +216,11 @@ The risk team's performance was exceptional and went beyond our expectations. Th
       </div><br>
           <h3>Contacts</h3>
     <ul>
-      <li>Tel: +254 791 825 104 / +254 791 825 166</li>
-      <li>Email: info@bellwickllp.com</li>
       <li>Britam Tower, 24th Floor, Hospital Road,</li>
       <li>P.O. Box 28018-00100,</li>
       <li>Nairobi, Kenya </li>
+      <li>Email: info@bellwickllp.com</li>
+      <li>Tel: +254 791 825 104 / +254 791 825 166</li>
     </ul>
     <!-- <img src="dmcc-logo.png" alt="DMCC Logo" class="partner-logo">
     <img src="un-global-logo.png" alt="UN Global Compact Logo" class="partner-logo"> -->
